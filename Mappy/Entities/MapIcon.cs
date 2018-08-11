@@ -36,7 +36,7 @@ namespace Mappy.Entities
             }
             catch (Exception ex)
             {
-                Logger.Exception(ex, "MapIcon -> SetRotation");
+                //Logger.Exception(ex, "MapIcon -> SetRotation");
             }
         }
     }
