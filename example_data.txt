@@ -1,0 +1,2207 @@
+Found: 105
+
+Name: Nenebaru
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1066761074
+NPCID 1: 2507562
+NPCID 2: 1001637
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -143.083923339844 / Y -153.551574707031 / Z -2
+Distance from player: 137.8687
+---------------------------------------------------------
+Name: Aetheryte
+Level: 0
+HP: 1065353216/1065353216
+MP: 1/1
+Model ID: 1065419352
+NPCID 1: 3885037
+NPCID 2: 9
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: Aetheryte
+Target Type: Unknown
+Position: X -144.518249511719 / Y -169.665100097656 / Z -1.35809326171875
+Distance from player: 136.7814
+---------------------------------------------------------
+Name: Mature Tree
+Level: 0
+HP: 1/1
+MP: 1/1
+Model ID: 0
+NPCID 1: 3995290
+NPCID 2: 30092
+Owner ID: 3758096384
+Memory ID: 1073742870
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: Gathering
+Target Type: 208
+Position: X -57.7283096313477 / Y -88.4101867675781 / Z -7.00390577316284
+Distance from player: 106.7511
+---------------------------------------------------------
+Name: Essylt
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1069528682
+NPCID 1: 3643221
+NPCID 2: 1001646
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -87.11376953125 / Y -73.7163696289063 / Z 4.99999952316284
+Distance from player: 134.8295
+---------------------------------------------------------
+Name: Mature Tree
+Level: 0
+HP: 1/1
+MP: 1/1
+Model ID: 0
+NPCID 1: 3995288
+NPCID 2: 30091
+Owner ID: 3758096384
+Memory ID: 1073742871
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: Gathering
+Target Type: 208
+Position: X -20.4886302947998 / Y -101.944602966309 / Z -3.70800805091858
+Distance from player: 81.91534
+---------------------------------------------------------
+Name: Ellie
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 5655884
+NPCID 2: 1011619
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -68.5283203125 / Y -128.007995605469 / Z 3.9825439453125
+Distance from player: 81.68163
+---------------------------------------------------------
+Name: ???
+Level: 0
+HP: 1065353216/1065353216
+MP: 1/1
+Model ID: 0
+NPCID 1: 4722118
+NPCID 2: 2004112
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: EObj
+Target Type: Unknown
+Position: X -122.179016113281 / Y -107.255737304688 / Z 4.01312255859375
+Distance from player: 136.8024
+---------------------------------------------------------
+Name: Alphinaud
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 5608520
+NPCID 2: 1011622
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X 80.61328125 / Y -166.155578613281 / Z -0.86981201171875
+Distance from player: 90.57583
+---------------------------------------------------------
+Name: Ilberd
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 5046210
+NPCID 2: 1009961
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -131.8837890625 / Y -109.636108398438 / Z 4.0740966796875
+Distance from player: 143.7492
+---------------------------------------------------------
+Name: Chuchuto
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 3995549
+NPCID 2: 1004147
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -26.5964965820313 / Y -146.684997558594 / Z -2.05999755859375
+Distance from player: 40.57583
+---------------------------------------------------------
+Name: Chuchuto
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 3995555
+NPCID 2: 1004148
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X 5.72210693359375 / Y -172.777893066406 / Z -1.9990234375
+Distance from player: 17.38873
+---------------------------------------------------------
+Name: Scrupulous Shopkeep
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4264498
+NPCID 2: 1006366
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -3.03656005859375 / Y -149.889404296875 / Z -2.05999755859375
+Distance from player: 33.48476
+---------------------------------------------------------
+Name: Aethernet Shard
+Level: 164
+HP: 14848438/14848438
+MP: 83568937/83568937
+Model ID: 1058775561
+NPCID 1: 4168379
+NPCID 2: 33
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: 187
+Type: Aetheryte
+Target Type: 32
+Position: X 64.2252197265625 / Y -115.312438964844 / Z 4.5318603515625
+Distance from player: 99.44801
+---------------------------------------------------------
+Name: Jajakuta
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1067299877
+NPCID 1: 3967338
+NPCID 2: 1003898
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -109.910827636719 / Y -73.8079223632813 / Z 4.50008916854858
+Distance from player: 149.2027
+---------------------------------------------------------
+Name: Brass Blade
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4753825
+NPCID 2: 1009162
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -67.5517578125 / Y -131.273376464844 / Z 3.9825439453125
+Distance from player: 78.78617
+---------------------------------------------------------
+Name: Aetheryte
+Level: 0
+HP: 1065353216/1065353216
+MP: 1/1
+Model ID: 1065419352
+NPCID 1: 4205023
+NPCID 2: 53
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: Aetheryte
+Target Type: Unknown
+Position: X -16.1593017578125 / Y -166.582763671875 / Z 0.32037353515625
+Distance from player: 18.27198
+---------------------------------------------------------
+Name: Skaetswys
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4754105
+NPCID 2: 1009169
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 13
+Map Index: 378
+Map Territory: 130
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -147.173278808594 / Y -99.90087890625 / Z 4.0740966796875
+Distance from player: 161.8524
+---------------------------------------------------------
+Name: Loonh Gah
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4754106
+NPCID 2: 1009170
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -88.7922973632813 / Y -77.3175048828125 / Z 4.9591064453125
+Distance from player: 132.9353
+---------------------------------------------------------
+Name: Teledji Adeledji
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4620901
+NPCID 2: 1008618
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -134.02001953125 / Y -112.321716308594 / Z 4.0435791015625
+Distance from player: 144.2537
+---------------------------------------------------------
+Name: Alphinaud
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4620902
+NPCID 2: 1008619
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -134.69140625 / Y -110.795776367188 / Z 4.0435791015625
+Distance from player: 145.589
+---------------------------------------------------------
+Name: Yugiri
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4620903
+NPCID 2: 1008620
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -131.57861328125 / Y -110.154968261719 / Z 4.0435791015625
+Distance from player: 143.2214
+---------------------------------------------------------
+Name: Kasasagi
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4620904
+NPCID 2: 1008621
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -131.761657714844 / Y -108.751098632813 / Z 4.0435791015625
+Distance from player: 144.0967
+---------------------------------------------------------
+Name: Rianne
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1069785096
+NPCID 1: 3642990
+NPCID 2: 1001974
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -67.6127319335938 / Y -107.469299316406 / Z 4.59445667266846
+Distance from player: 96.17097
+---------------------------------------------------------
+Name: Kikyo
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4620905
+NPCID 2: 1008622
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -130.449401855469 / Y -110.246520996094 / Z 4.0435791015625
+Distance from player: 142.2045
+---------------------------------------------------------
+Name: Oic Quartermaster
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1067030474
+NPCID 1: 4058488
+NPCID 2: 1003925
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -147.8447265625 / Y -102.067687988281 / Z 4.54992580413818
+Distance from player: 161.3503
+---------------------------------------------------------
+Name: Aethelgyth
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1069528686
+NPCID 1: 2464135
+NPCID 2: 1001434
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -34.6227416992188 / Y -148.790771484375 / Z -1.03325760364532
+Distance from player: 43.08093
+---------------------------------------------------------
+Name: Beringaer
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1072144019
+NPCID 1: 2464306
+NPCID 2: 1001436
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -40.4212036132813 / Y -201.709106445313 / Z -2.03362917900085
+Distance from player: 37.12743
+---------------------------------------------------------
+Name: Etfled
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1069785097
+NPCID 1: 2464308
+NPCID 2: 1001438
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -30.8385620117188 / Y -145.677917480469 / Z -1.03325760364532
+Distance from player: 43.52044
+---------------------------------------------------------
+Name: Zezeda
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1066761073
+NPCID 1: 2464309
+NPCID 2: 1001439
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -40.1160278320313 / Y -153.246398925781 / Z -1.43440628051758
+Distance from player: 43.46534
+---------------------------------------------------------
+Name: Osbert
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1070775701
+NPCID 1: 2464316
+NPCID 2: 1001445
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -13.0465087890625 / Y -184.405334472656 / Z -2.090576171875
+Distance from player: 4.88526
+---------------------------------------------------------
+Name: Hildibrand
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 5110354
+NPCID 2: 1010310
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 13
+Map Index: 247
+Map Territory: 130
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -55.43603515625 / Y 260.578247070313 / Z 3.4637451171875
+Distance from player: 446.0456
+---------------------------------------------------------
+Name: Warin
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1070775702
+NPCID 1: 2464318
+NPCID 2: 1001447
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -32.6390991210938 / Y -148.51611328125 / Z -1.03325760364532
+Distance from player: 42.12653
+---------------------------------------------------------
+Name: Josias
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1071051924
+NPCID 1: 3965986
+NPCID 2: 1002278
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -90.0740966796875 / Y -53.696533203125 / Z 2.09991359710693
+Distance from player: 152.9559
+---------------------------------------------------------
+Name: Hunter-Scholar
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1071067146
+NPCID 1: 2464320
+NPCID 2: 1001449
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -3.7080078125 / Y -189.166137695313 / Z -2.07226610183716
+Distance from player: 7.783621
+---------------------------------------------------------
+Name: Point Of Ambush
+Level: 0
+HP: 1065353216/1065353216
+MP: 1/1
+Model ID: 0
+NPCID 1: 3983423
+NPCID 2: 2001434
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: EObj
+Target Type: Unknown
+Position: X -115.770263671875 / Y -149.24853515625 / Z 0.01519775390625
+Distance from player: 112.5672
+---------------------------------------------------------
+Name: Entrance To The Barracks
+Level: 0
+HP: 1065353216/1065353216
+MP: 1/1
+Model ID: 0
+NPCID 1: 6515007
+NPCID 2: 2007529
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: EObj
+Target Type: Unknown
+Position: X -153.307434082031 / Y -98.0392456054688 / Z 5.23382568359375
+Distance from player: 168.1214
+---------------------------------------------------------
+Name: Gutless Gladiator
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 3976810
+NPCID 2: 1002296
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 247
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -139.421752929688 / Y 205.035400390625 / Z 4.16571044921875
+Distance from player: 409.558
+---------------------------------------------------------
+Name: Minion Of Light
+Level: 0
+HP: 0/0
+MP: 0/0
+Model ID: 1047595540
+NPCID 1: 0
+NPCID 2: 69
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: Minion
+Target Type: 232
+Position: X -102.20002746582 / Y -213.376708984375 / Z 0.260177135467529
+Distance from player: 98.65523
+---------------------------------------------------------
+Name: Gagalyo
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1059984496
+NPCID 1: 2464529
+NPCID 2: 1001469
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 247
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: 60
+Type: NPC
+Target Type: 232
+Position: X -44.5716552734375 / Y 145.098022460938 / Z -5.65420484542847
+Distance from player: 330.0516
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 51
+HP: 80/80
+MP: 16723993/16723993
+Model ID: 0
+NPCID 1: 4148351
+NPCID 2: 2001718
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: 85
+Type: EObj
+Target Type: Unknown
+Position: X -108.201721191406 / Y -105.760314941406 / Z 4.98968505859375
+Distance from player: 126.375
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 0
+HP: 1065353216/1065353216
+MP: 1/1
+Model ID: 0
+NPCID 1: 4148352
+NPCID 2: 2001719
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: EObj
+Target Type: Unknown
+Position: X -105.943481445313 / Y -107.866027832031 / Z 4.9591064453125
+Distance from player: 123.3039
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 52
+HP: 53407/53407
+MP: 83832346/83832346
+Model ID: 0
+NPCID 1: 4148353
+NPCID 2: 2001720
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: 164
+Type: EObj
+Target Type: Unknown
+Position: X -77.8973388671875 / Y -129.198120117188 / Z 5.0201416015625
+Distance from player: 88.15289
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 11
+HP: 14846369/14846369
+MP: 83568937/83568937
+Model ID: 0
+NPCID 1: 4148354
+NPCID 2: 2001721
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: 170
+Type: EObj
+Target Type: Unknown
+Position: X -74.9065551757813 / Y -130.998779296875 / Z 4.89813232421875
+Distance from player: 84.68797
+---------------------------------------------------------
+Name: Memenugu
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1066765744
+NPCID 1: 2464515
+NPCID 2: 1001474
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 247
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -21.957763671875 / Y 182.818237304688 / Z -4.9287109375
+Distance from player: 366.0254
+---------------------------------------------------------
+Name: Langloisiert The Lionheart
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4996400
+NPCID 2: 1009791
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -38.590087890625 / Y -141.619018554688 / Z 3.9825439453125
+Distance from player: 51.54408
+---------------------------------------------------------
+Name: Silent Moss The Solemn
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4996401
+NPCID 2: 1009793
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -37.0947265625 / Y -140.978149414063 / Z 3.9825439453125
+Distance from player: 51.20617
+---------------------------------------------------------
+Name: Mature Tree
+Level: 0
+HP: 1/1
+MP: 1/1
+Model ID: 0
+NPCID 1: 4105191
+NPCID 2: 30092
+Owner ID: 3758096384
+Memory ID: 1073742999
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: Gathering
+Target Type: 208
+Position: X -55.268440246582 / Y -93.6982269287109 / Z -6.27165079116821
+Distance from player: 100.8988
+---------------------------------------------------------
+Name: Raubahn
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4620906
+NPCID 2: 1008700
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -132.524658203125 / Y -111.924926757813 / Z 4.0435791015625
+Distance from player: 143.1497
+---------------------------------------------------------
+Name: Mature Tree
+Level: 0
+HP: 1/1
+MP: 1/1
+Model ID: 0
+NPCID 1: 4105189
+NPCID 2: 30092
+Owner ID: 3758096384
+Memory ID: 1073743000
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: Gathering
+Target Type: 208
+Position: X -65.5252532958984 / Y -75.6096267700195 / Z -9.32392501831055
+Distance from player: 121.8127
+---------------------------------------------------------
+Name: Mature Tree
+Level: 0
+HP: 1/1
+MP: 1/1
+Model ID: 0
+NPCID 1: 4105187
+NPCID 2: 30091
+Owner ID: 3758096384
+Memory ID: 1073743001
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: Gathering
+Target Type: 208
+Position: X -17.33078956604 / Y -111.847198486328 / Z -1.84880399703979
+Distance from player: 71.65803
+---------------------------------------------------------
+Name: Mature Tree
+Level: 0
+HP: 1/1
+MP: 1/1
+Model ID: 0
+NPCID 1: 4105186
+NPCID 2: 30091
+Owner ID: 3758096384
+Memory ID: 1073743002
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: Gathering
+Target Type: 208
+Position: X -19.7720203399658 / Y -94.2572708129883 / Z -4.67759990692139
+Distance from player: 89.453
+---------------------------------------------------------
+Name: Raubahn
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4077648
+NPCID 2: 1004004
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -139.299621582031 / Y -113.4814453125 / Z 4.0740966796875
+Distance from player: 148.3291
+---------------------------------------------------------
+Name: Pockmarked Silver Ore
+Level: 0
+HP: 1065353216/1065353216
+MP: 1/1
+Model ID: 0
+NPCID 1: 3632986
+NPCID 2: 2000378
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: EObj
+Target Type: Unknown
+Position: X -95.9639892578125 / Y -163.74462890625 / Z -1.0223388671875
+Distance from player: 89.66508
+---------------------------------------------------------
+Name: Pockmarked Silver Ore
+Level: 0
+HP: 1065353216/1065353216
+MP: 1/1
+Model ID: 0
+NPCID 1: 3632987
+NPCID 2: 2000379
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: EObj
+Target Type: Unknown
+Position: X -103.959777832031 / Y -213.702697753906 / Z 0.47296142578125
+Distance from player: 100.4346
+---------------------------------------------------------
+Name: Pockmarked Silver Ore
+Level: 0
+HP: 1065353216/1065353216
+MP: 1/1
+Model ID: 0
+NPCID 1: 3632988
+NPCID 2: 2000380
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: EObj
+Target Type: Unknown
+Position: X -1.175048828125 / Y -111.284057617188 / Z -1.32757568359375
+Distance from player: 72.02585
+---------------------------------------------------------
+Name: Mature Tree
+Level: 0
+HP: 1/1
+MP: 1/1
+Model ID: 0
+NPCID 1: 4317789
+NPCID 2: 30392
+Owner ID: 3758096384
+Memory ID: 1073742750
+Map ID: 13
+Map Index: 247
+Map Territory: 130
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: Gathering
+Target Type: 208
+Position: X 16.5024299621582 / Y 225.949996948242 / Z 0.0655713975429535
+Distance from player: 409.6566
+---------------------------------------------------------
+Name: Swift
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1071328141
+NPCID 1: 4101490
+NPCID 2: 1004576
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -141.649536132813 / Y -114.671569824219 / Z 4.09999990463257
+Distance from player: 149.8624
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 0
+HP: 1065353216/1065353216
+MP: 1/1
+Model ID: 0
+NPCID 1: 4175145
+NPCID 2: 2001790
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: EObj
+Target Type: Unknown
+Position: X -105.607727050781 / Y -107.591430664063 / Z 3.9825439453125
+Distance from player: 123.1543
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 139
+HP: 116/116
+MP: 16658448/16658448
+Model ID: 0
+NPCID 1: 4175146
+NPCID 2: 2001791
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: 121
+Type: EObj
+Target Type: Unknown
+Position: X -107.866027832031 / Y -105.516174316406 / Z 3.9825439453125
+Distance from player: 126.2072
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 0
+HP: 1065353216/1065353216
+MP: 1/1
+Model ID: 0
+NPCID 1: 4055676
+NPCID 2: 2001514
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: EObj
+Target Type: Unknown
+Position: X -105.912902832031 / Y -107.896606445313 / Z 3.9825439453125
+Distance from player: 123.2093
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 195
+HP: 14844336/14844336
+MP: 16724005/16724005
+Model ID: 0
+NPCID 1: 4175147
+NPCID 2: 2001792
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: 131
+Type: EObj
+Target Type: Unknown
+Position: X -77.4700927734375 / Y -128.953979492188 / Z 3.9825439453125
+Distance from player: 87.88844
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 0
+HP: 1065353216/1065353216
+MP: 1/1
+Model ID: 0
+NPCID 1: 4055678
+NPCID 2: 2001515
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: EObj
+Target Type: Unknown
+Position: X -108.171264648438 / Y -105.821350097656 / Z 3.9825439453125
+Distance from player: 126.2613
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 154
+HP: 50077/50077
+MP: 16592924/16592924
+Model ID: 0
+NPCID 1: 4175148
+NPCID 2: 2001793
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: 162
+Type: EObj
+Target Type: Unknown
+Position: X -74.5708618164063 / Y -130.693542480469 / Z 3.9825439453125
+Distance from player: 84.5422
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 99
+HP: 52917/52917
+MP: 83766805/83766805
+Model ID: 0
+NPCID 1: 4055679
+NPCID 2: 2001516
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: 186
+Type: EObj
+Target Type: Unknown
+Position: X -77.7752685546875 / Y -129.259216308594 / Z 3.9825439453125
+Distance from player: 87.94186
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 103
+HP: 14845366/14845366
+MP: 83568937/83568937
+Model ID: 0
+NPCID 1: 4055680
+NPCID 2: 2001517
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: 145
+Type: EObj
+Target Type: Unknown
+Position: X -74.8760375976563 / Y -130.998779296875 / Z 3.9825439453125
+Distance from player: 84.59354
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 166
+HP: 49849/49849
+MP: 143373/143373
+Model ID: 0
+NPCID 1: 4175151
+NPCID 2: 2001798
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: 190
+Type: EObj
+Target Type: Unknown
+Position: X -107.927124023438 / Y -105.485656738281 / Z 4.98968505859375
+Distance from player: 126.3264
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 170
+HP: 44/44
+MP: 16723979/16723979
+Model ID: 0
+NPCID 1: 4175152
+NPCID 2: 2001799
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: 49
+Type: EObj
+Target Type: Unknown
+Position: X -105.638244628906 / Y -107.591430664063 / Z 4.9591064453125
+Distance from player: 123.2303
+---------------------------------------------------------
+Name: Elured
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1070775701
+NPCID 1: 3779404
+NPCID 2: 1002938
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -25.8640747070313 / Y -176.806335449219 / Z -2.07034206390381
+Distance from player: 18.52556
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 0
+HP: 53635/53635
+MP: 83766808/83766808
+Model ID: 0
+NPCID 1: 4175153
+NPCID 2: 2001800
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: 136
+Type: EObj
+Target Type: Unknown
+Position: X -77.6226806640625 / Y -128.893005371094 / Z 5.0201416015625
+Distance from player: 88.12329
+---------------------------------------------------------
+Name: Striking Dummy
+Level: 56
+HP: 50579/50579
+MP: 16724008/16724008
+Model ID: 0
+NPCID 1: 4175154
+NPCID 2: 2001801
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: 134
+Type: EObj
+Target Type: Unknown
+Position: X -74.6014404296875 / Y -130.693542480469 / Z 4.89813232421875
+Distance from player: 84.63662
+---------------------------------------------------------
+Name: Yellow Moon
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4511446
+NPCID 2: 1005712
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -71.5496215820313 / Y -112.718444824219 / Z 4.0435791015625
+Distance from player: 94.65122
+---------------------------------------------------------
+Name: Hildibrand
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4511447
+NPCID 2: 1005713
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -72.9839477539063 / Y -113.023620605469 / Z 3.9825439453125
+Distance from player: 95.38657
+---------------------------------------------------------
+Name: Nashu Mhakaracca
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4511448
+NPCID 2: 1005714
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -70.572998046875 / Y -115.831298828125 / Z 4.5318603515625
+Distance from player: 91.734
+---------------------------------------------------------
+Name: Flame Quartermaster
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1066761072
+NPCID 1: 3643459
+NPCID 2: 1002390
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -143.450073242188 / Y -108.537414550781 / Z 4.5499267578125
+Distance from player: 154.3465
+---------------------------------------------------------
+Name: Flame Personnel Officer
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1070775704
+NPCID 1: 3643460
+NPCID 2: 1002391
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -144.396179199219 / Y -107.225158691406 / Z 4.09999990463257
+Distance from player: 155.7901
+---------------------------------------------------------
+Name: Oic Administrator
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1074121942
+NPCID 1: 3643461
+NPCID 2: 1002392
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -147.081726074219 / Y -103.624084472656 / Z 4.09999990463257
+Distance from player: 159.8956
+---------------------------------------------------------
+Name: Wymond
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1070775700
+NPCID 1: 2360548
+NPCID 2: 1001285
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -68.7724609375 / Y -126.512573242188 / Z 4.04111242294312
+Distance from player: 82.87683
+---------------------------------------------------------
+Name: Y'mhitra
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 5900156
+NPCID 2: 1014027
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 13
+Map Index: 378
+Map Territory: 130
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -124.528930664063 / Y -97.0321044921875 / Z 4.0435791015625
+Distance from player: 144.5951
+---------------------------------------------------------
+Name: Merchant & Mender
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1070499479
+NPCID 1: 3670912
+NPCID 2: 1001563
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -8.34674072265625 / Y -149.340087890625 / Z -2.04808044433594
+Distance from player: 33.60422
+---------------------------------------------------------
+Name: Dancing Wolf
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 5900157
+NPCID 2: 1014028
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 13
+Map Index: 378
+Map Territory: 130
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -126.573608398438 / Y -96.2387084960938 / Z 4.0435791015625
+Distance from player: 146.71
+---------------------------------------------------------
+Name: Independent Armorer
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1069785097
+NPCID 1: 3670913
+NPCID 2: 1001564
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -9.6895751953125 / Y -145.098083496094 / Z -2.04808044433594
+Distance from player: 37.86868
+---------------------------------------------------------
+Name: Lina
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1066205707
+NPCID 1: 2367986
+NPCID 2: 1001290
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -54.3984375 / Y -147.997314453125 / Z 4.09999465942383
+Distance from player: 58.10881
+---------------------------------------------------------
+Name: Eline Roaille
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 5376936
+NPCID 2: 1010709
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -140.001586914063 / Y -108.842651367188 / Z 4.0740966796875
+Distance from player: 151.1681
+---------------------------------------------------------
+Name: Ele
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4841645
+NPCID 2: 1009055
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 13
+Map Index: 247
+Map Territory: 130
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -142.748229980469 / Y 232.776245117188 / Z 4.2266845703125
+Distance from player: 436.9402
+---------------------------------------------------------
+Name: Zuzumeda
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1067030476
+NPCID 1: 3775589
+NPCID 2: 1001578
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -35.4467163085938 / Y -154.955383300781 / Z -2.0576171875
+Distance from player: 38.93226
+---------------------------------------------------------
+Name: Pipin
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 5608517
+NPCID 2: 1010998
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X 78.416015625 / Y -166.338623046875 / Z -0.65618896484375
+Distance from player: 88.38637
+---------------------------------------------------------
+Name: Pipin
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 5859799
+NPCID 2: 1012389
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -133.318115234375 / Y -111.772338867188 / Z 4.0740966796875
+Distance from player: 143.915
+---------------------------------------------------------
+Name: Urianger
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 5859816
+NPCID 2: 1012390
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -131.853210449219 / Y -111.192504882813 / Z 4.0740966796875
+Distance from player: 142.9354
+---------------------------------------------------------
+Name: Mineral Deposit
+Level: 0
+HP: 1/1
+MP: 1/1
+Model ID: 0
+NPCID 1: 4103667
+NPCID 2: 30410
+Owner ID: 3758096384
+Memory ID: 1073743368
+Map ID: 13
+Map Index: 247
+Map Territory: 130
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: Gathering
+Target Type: 208
+Position: X -158.272003173828 / Y 197.982498168945 / Z 6.69803094863892
+Distance from player: 409.4487
+---------------------------------------------------------
+Name: Mineral Deposit
+Level: 0
+HP: 1/1
+MP: 1/1
+Model ID: 0
+NPCID 1: 4103665
+NPCID 2: 30412
+Owner ID: 3758096384
+Memory ID: 1073743370
+Map ID: 13
+Map Index: 247
+Map Territory: 130
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: Gathering
+Target Type: 208
+Position: X -109.252296447754 / Y 251.29020690918 / Z 7.30343198776245
+Distance from player: 445.8943
+---------------------------------------------------------
+Name: Well-Heeled Youth
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 5653978
+NPCID 2: 1011565
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -78.8739013671875 / Y -110.429565429688 / Z 3.9825439453125
+Distance from player: 101.3101
+---------------------------------------------------------
+Name: Delivery Moogle
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1069681331
+NPCID 1: 4186412
+NPCID 2: 1006026
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X 7.09539794921875 / Y -166.582763671875 / Z -1.33806240558624
+Distance from player: 22.53613
+---------------------------------------------------------
+Name: Downtrodden Daughter
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 6886019
+NPCID 2: 1022092
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 13
+Map Index: 247
+Map Territory: 130
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -132.31103515625 / Y 221.2099609375 / Z 3.8909912109375
+Distance from player: 422.7693
+---------------------------------------------------------
+Name: Troubled Adventurer
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4696200
+NPCID 2: 1008798
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 13
+Map Index: 378
+Map Territory: 130
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -93.0647583007813 / Y -124.712036132813 / Z 3.9825439453125
+Distance from player: 102.9482
+---------------------------------------------------------
+Name: Mineral Deposit
+Level: 0
+HP: 1/1
+MP: 1/1
+Model ID: 0
+NPCID 1: 3995162
+NPCID 2: 30410
+Owner ID: 3758096384
+Memory ID: 1073743375
+Map ID: 13
+Map Index: 247
+Map Territory: 130
+Is Casting: Yes
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: Gathering
+Target Type: 208
+Position: X -148.972198486328 / Y 191.752899169922 / Z 5.1382040977478
+Distance from player: 400.2683
+---------------------------------------------------------
+Name: Popori
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1066761074
+NPCID 1: 2464175
+NPCID 2: 1001322
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -76.8902587890625 / Y -62.3637084960938 / Z 0.601881384849548
+Distance from player: 138.7076
+---------------------------------------------------------
+Name: Raging Rat
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 5046906
+NPCID 2: 1010188
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -106.523315429688 / Y -82.1698608398438 / Z 4.2266845703125
+Distance from player: 140.8059
+---------------------------------------------------------
+Name: Mamajaru
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 4021739
+NPCID 2: 1003820
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -64.5609741210938 / Y -118.181213378906 / Z 3.9825439453125
+Distance from player: 85.94572
+---------------------------------------------------------
+Name: Hamon
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 3955440
+NPCID 2: 1003822
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -27.3900146484375 / Y -146.929138183594 / Z -2.05999755859375
+Distance from player: 40.72205
+---------------------------------------------------------
+Name: Chocobokeep
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1066761074
+NPCID 1: 4090712
+NPCID 2: 1001607
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 248
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -2.7314453125 / Y -158.526062011719 / Z -2.05571699142456
+Distance from player: 25.06413
+---------------------------------------------------------
+Name: Nanamo Ul Namo
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 7074985
+NPCID 2: 1024044
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -110.368530273438 / Y -114.000183105469 / Z 3.9825439453125
+Distance from player: 123.2502
+---------------------------------------------------------
+Name: Ul'dahn Citizen
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 6876481
+NPCID 2: 1021829
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 13
+Map Index: 378
+Map Territory: 130
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -98.4359741210938 / Y -104.997375488281 / Z 3.9825439453125
+Distance from player: 119.2543
+---------------------------------------------------------
+Name: Flame Mage
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 1070775700
+NPCID 1: 4058316
+NPCID 2: 1004380
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 378
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Idle
+Type: NPC
+Target Type: 232
+Position: X -133.898010253906 / Y -105.363586425781 / Z 4.09999990463257
+Distance from player: 147.6835
+---------------------------------------------------------
+Name: Pleasant Pauper
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 6876793
+NPCID 2: 1021845
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 13
+Map Index: 247
+Map Territory: 130
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -138.597778320313 / Y 223.956665039063 / Z 4.1961669921875
+Distance from player: 427.274
+---------------------------------------------------------
+Name: Downtrodden Daughter
+Level: 1
+HP: 1/1
+MP: 0/0
+Model ID: 0
+NPCID 1: 6876794
+NPCID 2: 1021846
+Owner ID: 3758096384
+Memory ID: 3758096384
+Map ID: 21
+Map Index: 247
+Map Territory: 141
+Is Casting: No
+Is Claimed: No
+Is Fate: No
+Status: Unknown
+Type: NPC
+Target Type: 232
+Position: X -132.31103515625 / Y 221.2099609375 / Z 3.8909912109375
+Distance from player: 422.7693
+---------------------------------------------------------
