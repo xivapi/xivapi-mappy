@@ -1,5 +1,7 @@
 # FFXIV Mappy (beta)
 
+Be nice, I'm a PHP developer.
+
 ## Note:
 
 Once built and run once it will download json data from the ffxivapp repositories. There is a custom signature 
