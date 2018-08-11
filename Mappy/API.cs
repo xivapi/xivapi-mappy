@@ -95,8 +95,8 @@ namespace Mappy
                         App.Instance.MapViewer.SetMapVisual(Map);
 
                         // set axis restriction
-                        App.Instance.TrackingEnemies.setAxisRestriction((int)Map.LayerCount > 1);
-                        App.Instance.TrackingNpcs.setAxisRestriction((int)Map.LayerCount > 1);
+                        App.Instance.TrackingEnemies.SetAxisRestriction((int)Map.LayerCount > 1);
+                        App.Instance.TrackingNpcs.SetAxisRestriction((int)Map.LayerCount > 1);
 
                         // enable memory timer
                         App.Instance.StartZonedTimerCountdown();

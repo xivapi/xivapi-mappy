@@ -25,11 +25,9 @@ namespace Mappy.Tracking
             var entityLevel = entity.Level.ToString().PadRight(4, ' ');
             var entityName = entity.Name.PadRight(30, ' ');
             var entityId = entity.NPCID2.ToString().PadRight(15, ' ');
+            var entityString = $"{entityType} id: {entityId} (TypeID: {entity.TypeID})   lv.{entityLevel} {entityName}";
 
-            var entityString = $"{entityType} id: {entityId} lv.{entityLevel} {entityName}";
-
-            if (Properties.Settings.Default.ExtendLogMessages)
-            {
+            if (Properties.Settings.Default.ExtendLogMessages) {
                 entityString += $"ModelID: {entity.ModelID} - NPCID1:  {entity.NPCID1} - Distance: {entity.Distance} - Pos: {entity.Coordinate.X},{entity.Coordinate.Y}";
             }
 
@@ -41,7 +39,7 @@ namespace Mappy.Tracking
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        public bool isIgnored(string type, ActorItem entity)
+        public bool IsIgnored(string type, ActorItem entity)
         {
             // skip if missing data or unknown
             if (entity.Type.ToString().ToLower() == "unknown"
@@ -55,65 +53,55 @@ namespace Mappy.Tracking
 
             // if enabled, non English entities will be ignored.
             // off by default
-            if (Properties.Settings.Default.IgnoreNoneEnglish)
-            {
+            if (Properties.Settings.Default.IgnoreNoneEnglish) {
                 Regex rgx = new Regex("[^a-zA-Z0-9 -]");
                 string name = rgx.Replace(entity.Name.ToString(), "");
 
                 // name too short or too long
-                if (entity.Name.ToString().Length < 2 || entity.Name.ToString().Length > 64)
-                {
+                if (entity.Name.ToString().Length < 2 || entity.Name.ToString().Length > 64) {
                     return true;
                 }
             }
 
             // has a stupid big id (100 million)
-            if (entity.NPCID2 > 100000000)
-            {
+            if (entity.NPCID2 > 100000000) {
                 return true;
             }
 
             // egis and fairies
-            uint[] egis = { 1881, 1404, 1403, 1402, 1398, 1399 };
-            if (type == "enemy" && egis.Contains(entity.ModelID))
-            {
+            uint[] egis = { 952, 1881, 1404, 1403, 1402, 1398, 1399 };
+            if (type == "BNpcName" && egis.Contains(entity.ModelID)) {
                 return true;
             }
 
             // we only care about entities on the same map as the player
-            if (entity.MapID != Player.MapID)
-            {
+            if (entity.MapID != Player.MapID) {
                 return true;
             }
 
             // ignore out of range eobjs
-            if (entity.Type.ToString().ToLower() == "eobj" && entity.NPCID2 > 50000000)
-            {
+            if (entity.Type.ToString().ToLower() == "eobj" && entity.NPCID2 > 50000000) {
                 return true;
             }
 
             // ignore if it starts with an x
-            if (entity.Name[0].ToString() == "×")
-            {
+            if (entity.Name[0].ToString() == "×") {
                 return true;
             }
 
             // has weird symbols
-            if (entity.Name.ToString().Contains('�'))
-            {
+            if (entity.Name.ToString().Contains('�')) {
                 return true;
             }
 
             // restrict axis
-            if (axisRestricted)
-            {
+            if (axisRestricted) {
                 double AxisLimit = 6;
                 double AxisDiff = entity.Z - Player.Z;
                 AxisDiff = Math.Abs(AxisDiff);
 
                 // don't include stuff that is past the axis threshold
-                if (AxisDiff > AxisLimit)
-                {
+                if (AxisDiff > AxisLimit) {
                     return true;
                 }
             }
@@ -126,7 +114,7 @@ namespace Mappy.Tracking
         /// when the layer count is above 1
         /// </summary>
         /// <param name="enabled"></param>
-        public void setAxisRestriction(bool enabled)
+        public void SetAxisRestriction(bool enabled)
         {
             axisRestricted = enabled;
         }
