@@ -12,6 +12,7 @@ namespace Mappy.Entities
         public uint ModelID; // ModelID
         public string Name;
         public string Type;
+        public byte TypeID;
         public byte Race;
         public uint MapID;
         public uint MapIndex;
@@ -49,6 +50,7 @@ namespace Mappy.Entities
             ModelID = entity.ModelID;
             Name = entity.Name.ToString().Trim();
             Type = entity.Type.ToString();
+            TypeID = entity.TypeID;
             Race = entity.Race;
             MapID = entity.MapID;
             MapIndex = entity.MapIndex;
