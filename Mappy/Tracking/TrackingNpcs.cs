@@ -28,7 +28,7 @@ namespace Mappy.Tracking
             foreach (var entity in entities) 
             {
                 // check if we're ignoring this entity
-                if (IsIgnored("ENpcResident", entity))
+                if (IsIgnored("ENPC", entity))
                 {
                     continue;
                 }
@@ -40,7 +40,7 @@ namespace Mappy.Tracking
 
                     // add to existing list
                     list.Add(entity.NPCID2);
-                    LogEntity("ENpcResident", entity);
+                    LogEntity("ENPC", entity);
 
                     // add to map
                     App.Instance.MapViewer.AddNpcIcon(entity);
@@ -68,7 +68,7 @@ namespace Mappy.Tracking
                 ActorItem entity = entities[i];
 
                 // check if we're ignoring this entity
-                if (IsIgnored("ENpcResident", entity))
+                if (IsIgnored("ENPC", entity))
                 {
                     entities.RemoveAt(i);
                     continue;

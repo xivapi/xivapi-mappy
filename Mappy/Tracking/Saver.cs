@@ -30,7 +30,7 @@ namespace Mappy.Tracking
                     // submit the tracked data
                     List<Entity> savedEnemiesList = new List<Entity>(savedEnemies);
                     savedEnemies.Clear();
-                    API.SubmitData(savedEnemiesList);
+                    API.SubmitData("BNPC", savedEnemiesList);
 
                     // write to log
                     Logger.Add("> SAVE: Enemies");
@@ -61,7 +61,7 @@ namespace Mappy.Tracking
                     // submit the tracked data
                     List<Entity> savedNpcsList = new List<Entity>(savedNpcs);
                     savedNpcs.Clear();
-                    API.SubmitData(savedNpcsList);
+                    API.SubmitData("ENPC", savedNpcsList);
 
                     // write to log
                     Logger.Add("> Save: NPCs");

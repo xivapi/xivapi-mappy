@@ -9,7 +9,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="MinimumSubmitQuantity" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">15</Value>
+      <Value Profile="(Default)">10</Value>
     </Setting>
     <Setting Name="TimeFormat" Type="System.String" Scope="User">
       <Value Profile="(Default)">hh:mm:ss tt</Value>

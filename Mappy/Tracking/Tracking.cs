@@ -21,10 +21,10 @@ namespace Mappy.Tracking
         /// <param name="entity"></param>
         public void LogEntity(string type, ActorItem entity)
         {
-            var entityType = type.PadRight(15, ' ');
-            var entityLevel = entity.Level.ToString().PadRight(4, ' ');
-            var entityName = entity.Name.PadRight(30, ' ');
-            var entityId = entity.NPCID2.ToString().PadRight(15, ' ');
+            var entityType   = type.PadRight(15, ' ');
+            var entityLevel  = entity.Level.ToString().PadRight(4, ' ');
+            var entityName   = entity.Name.PadRight(30, ' ');
+            var entityId     = entity.NPCID2.ToString().PadRight(15, ' ');
             var entityString = $"{entityType} id: {entityId} (TypeID: {entity.TypeID})   lv.{entityLevel} {entityName}";
 
             if (Properties.Settings.Default.ExtendLogMessages) {
@@ -69,8 +69,8 @@ namespace Mappy.Tracking
             }
 
             // egis and fairies
-            uint[] egis = { 952, 1881, 1404, 1403, 1402, 1398, 1399 };
-            if (type == "BNpcName" && egis.Contains(entity.ModelID)) {
+            uint[] egis = { 1881, 1404, 1403, 1402, 1398, 1399 };
+            if (type == "BNPC" && egis.Contains(entity.ModelID)) {
                 return true;
             }
 

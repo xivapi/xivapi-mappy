@@ -7,6 +7,9 @@ namespace Mappy.Entities
     public class Entity
     {
         public string Index;
+        public uint ENpcResidentID;
+        public uint BNpcNameID;
+        public uint BNpcBaseID;
         public uint ID1;
         public uint ID2;
         public uint ModelID; // ModelID
@@ -43,6 +46,14 @@ namespace Mappy.Entities
         public Entity(string index, ActorItem entity)
         {
             dynamic map = App.Instance.MapViewer.Map;
+
+            // Assign dat file ID's to memory ids
+            if (index == "ENPC") {
+                ENpcResidentID = entity.NPCID2;
+            } else {
+                BNpcNameID = entity.ModelID;
+                BNpcBaseID = entity.NPCID2;
+            }
 
             Index = index;
             ID1 = entity.NPCID1;

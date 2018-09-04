@@ -19,7 +19,7 @@ namespace Mappy
         //
         // Submit data
         //
-        public static async void SubmitData(List<Entity> data)
+        public static async void SubmitData(string type, List<Entity> data)
         {
             // if submit turned off
             if (!Properties.Settings.Default.Submit || String.IsNullOrEmpty(Properties.Settings.Default.ApiKey)) {
@@ -43,12 +43,13 @@ namespace Mappy
                 {
                     key = Properties.Settings.Default.ApiKey,
                     id,
+                    type,
                     data,
                 });
                 Logger.Add($"---> [#{id}] Json data submitted successfully");
                 App.Instance.labelSubmitStatus.Text = $"(API) Payload #{id} sent";
             } catch (Exception ex) {
-                Logger.Exception(ex, "API Submit");
+                Logger.Exception(ex, $"COULD NOT SAVE PAYLOAD: [#{id}]");
             }
         }
 
