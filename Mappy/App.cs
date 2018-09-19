@@ -87,6 +87,9 @@ namespace Mappy
             };
             aTimer.Interval = Properties.Settings.Default.ScanTimerSpeed;
             aTimer.Enabled = true;
+
+            // check key
+            API.CheckApiKey(Properties.Settings.Default.ApiKey);
         }
 
         #region Log View Window
@@ -321,6 +324,18 @@ namespace Mappy
 
         #region Settings
 
+        public void ToggleSubmitting(bool enable)
+        {
+            Settings_Submit.Checked = enable;
+            Properties.Settings.Default.Submit = Settings_Submit.Checked;
+            Properties.Settings.Default.Save();
+
+            Logger.Add(enable 
+                ? "XIVAPI key enabled! Data will submit. If you have enabled the API key after memory scan, you will need to restart the app to pickup the existing data." 
+                : "XIVAPI key does not have permission to submit data. Ask @Vekien for permission!"
+            );
+        }
+
         private void LoadSettings()
         {
             TopMost = Properties.Settings.Default.AlwaysOnTop;
@@ -338,12 +353,17 @@ namespace Mappy
         {
             Properties.Settings.Default.Submit = Settings_Submit.Checked;
             Properties.Settings.Default.Save();
+
+            if (Settings_Submit.Checked) {
+                API.CheckApiKey(Properties.Settings.Default.ApiKey);
+            }
         }
 
         private void Settings_AlwaysOnTop_CheckedChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.AlwaysOnTop = Settings_AlwaysOnTop.Checked;
             Properties.Settings.Default.Save();
+
         }
 
         private void Settings_MapBoundaries_CheckedChanged(object sender, EventArgs e)

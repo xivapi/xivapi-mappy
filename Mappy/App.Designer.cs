@@ -168,8 +168,6 @@
             // Settings_Submit
             // 
             this.Settings_Submit.AutoSize = true;
-            this.Settings_Submit.Checked = true;
-            this.Settings_Submit.CheckState = System.Windows.Forms.CheckState.Checked;
             this.Settings_Submit.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Settings_Submit.Location = new System.Drawing.Point(19, 325);
             this.Settings_Submit.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -426,7 +424,8 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(335, 51);
             this.label11.TabIndex = 60;
-            this.label11.Text = "View the XIVAPI #beta channel on discord for the key. (This is not an apps key)";
+            this.label11.Text = "Enter your apps key, only valid keys can submit data to the API. Ask @Vekien for " +
+    "approval.";
             // 
             // label12
             // 

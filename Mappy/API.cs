@@ -16,9 +16,30 @@ namespace Mappy
         private static int total = 0;
         private static bool requestInAction = false;
 
-        //
-        // Submit data
-        //
+        /// <summary>
+        /// Check an API key can submit data to XIVAPI
+        /// </summary>
+        /// <param name="key"></param>
+        public static async void CheckApiKey(string key)
+        {
+            try 
+            {
+                Logger.Add("Validating XIVAPI key...");
+
+                dynamic response = await $"http://xivapi.local/mappy/verify?key={key}".GetJsonAsync();
+                App.Instance.ToggleSubmitting(response.allowed);
+            } 
+            catch (Exception ex) 
+            {
+                Logger.Exception(ex, "Mappy -> CheckApiKey");
+            }
+        }
+
+        /// <summary>
+        /// Submit some data (Even if you hard code this, there are server checks XD)
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="data"></param>
         public static async void SubmitData(string type, List<Entity> data)
         {
             // if submit turned off
@@ -39,9 +60,9 @@ namespace Mappy
 
             try {
                 // submit to api
-                await "http://xivapi.local/data/submit".PostJsonAsync(new
+                string key = Properties.Settings.Default.ApiKey;
+                await $"http://xivapi.local/mappy/submit?key={key}".PostJsonAsync(new
                 {
-                    key = Properties.Settings.Default.ApiKey,
                     id,
                     type,
                     data,
@@ -53,9 +74,10 @@ namespace Mappy
             }
         }
 
-        //
-        // Get map image list
-        //
+        /// <summary>
+        /// Get map image from XIVAPI
+        /// </summary>
+        /// <param name="id"></param>
         public static async void GetMapImage(uint id)
         {
             // if a request is in action or id is zero, do nothing

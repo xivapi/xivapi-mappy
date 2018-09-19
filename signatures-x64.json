@@ -1,5 +1,52 @@
 [
   {
+    "Key": "TARGET",
+    "Value": "41bc000000e041bd01000000493bc47555488d0d",
+    "ASMSignature": true,
+    "PointerPath": [
+      0,
+      144
+    ]
+  },
+  {
+    "Key": "CHATLOG",
+    "Value": "e8********85c0740e488b0d********33D2E8********488b0d",
+    "ASMSignature": true,
+    "PointerPath": [
+      0,
+      0,
+      48,
+      908
+    ]
+  },
+  {
+    "Key": "CHARMAP",
+    "Value": "488b420848c1e8033da701000077248bc0488d0d",
+    "ASMSignature": true,
+    "PointerPath": [
+      0,
+      0
+    ]
+  },
+  {
+    "Key": "PARTYMAP",
+    "Value": "488D7C242066660F1F840000000000488B17488D0D",
+    "ASMSignature": true,
+    "PointerPath": [
+      0,
+      752
+    ]
+  },
+  {
+    "Key": "PARTYCOUNT",
+    "Value": "488D7C242066660F1F840000000000488B17488D0D",
+    "ASMSignature": true,
+    "PointerPath": [
+      0,
+      -26920
+    ]
+  },
+  {
     "Key": "MAPINFO",
     "Value": "E8********CCCCCCCCCC48895C2408574883EC208B05",
     "ASMSignature": true,
@@ -17,133 +64,85 @@
       -4
     ]
   },
-  
   {
-    "ASMSignature": true,
-    "Key": "TARGET",
-    "PointerPath": [
-      0,
-      144
-    ],
-    "Value": "41bc000000e041bd01000000493bc47555488d0d"
-  },
-  {
-    "ASMSignature": true,
-    "Key": "CHATLOG",
-    "PointerPath": [
-      0,
-      0,
-      48,
-      908
-    ],
-    "Value": "e8********85c0740e488b0d********33D2E8********488b0d"
-  },
-  {
-    "ASMSignature": true,
-    "Key": "CHARMAP",
-    "PointerPath": [
-      0,
-      0
-    ],
-    "Value": "488b420848c1e8033da701000077248bc0488d0d"
-  },
-  {
-    "ASMSignature": true,
-    "Key": "PARTYMAP",
-    "PointerPath": [
-      0,
-      384
-    ],
-    "Value": "488D7C242066660F1F840000000000488B17488D0D"
-  },
-  {
-    "ASMSignature": true,
-    "Key": "PARTYCOUNT",
-    "PointerPath": [
-      0,
-      14784
-    ],
-    "Value": "488D7C242066660F1F840000000000488B17488D0D"
-  },
-  {
-    "ASMSignature": true,
     "Key": "PLAYERINFO",
+    "Value": "83f9ff7412448b048e8bd3488d0d",
+    "ASMSignature": true,
     "PointerPath": [
       0,
       0
-    ],
-    "Value": "83f9ff7412448b048e8bd3488d0d"
+    ]
   },
   {
-    "ASMSignature": true,
     "Key": "ENMITYMAP",
+    "Value": "83f9ff7412448b048e8bd3488d0d",
+    "ASMSignature": true,
     "PointerPath": [
       0,
       -4656
-    ],
-    "Value": "83f9ff7412448b048e8bd3488d0d"
+    ]
   },
   {
-    "ASMSignature": true,
     "Key": "ENMITY_COUNT",
+    "Value": "83f9ff7412448b048e8bd3488d0d",
+    "ASMSignature": true,
     "PointerPath": [
       0,
       -2352
-    ],
-    "Value": "83f9ff7412448b048e8bd3488d0d"
+    ]
   },
   {
-    "ASMSignature": true,
     "Key": "AGROMAP",
+    "Value": "83f9ff7412448b048e8bd3488d0d",
+    "ASMSignature": true,
     "PointerPath": [
       0,
       -2344
-    ],
-    "Value": "83f9ff7412448b048e8bd3488d0d"
+    ]
   },
   {
-    "ASMSignature": true,
     "Key": "AGRO_COUNT",
+    "Value": "83f9ff7412448b048e8bd3488d0d",
+    "ASMSignature": true,
     "PointerPath": [
       0,
       -40
-    ],
-    "Value": "83f9ff7412448b048e8bd3488d0d"
+    ]
   },
   {
-    "ASMSignature": false,
     "Key": "HOTBAR",
-    "PointerPath": [
-      0,
-      56,
-      48,
-      40,
-      32,
-      0,
-      0
-    ],
-    "Value": "F783843E****0000"
-  },
-  {
+    "Value": "9C640000000000002C2C000000000000",
     "ASMSignature": false,
-    "Key": "RECAST",
     "PointerPath": [
       0,
-      56,
-      24,
-      48,
-      32,
-      60
-    ],
-    "Value": "F783843E****0000"
+      56, 
+      48, 
+      40, 
+      32, 
+      0, 
+      0
+    ]
   },
   {
-    "ASMSignature": true,
+    "Key": "RECAST",
+    "Value": "9C640000000000002C2C000000000000",
+    "ASMSignature": false,
+    "PointerPath": [
+      0,
+      56, 
+      24, 
+      48, 
+      32, 
+      60
+    ]
+  },
+  {
     "Key": "INVENTORY",
+    "Value": "48895C2408488974241048897C2418488B3D",
+    "ASMSignature": true,
     "PointerPath": [
       0,
       0
-    ],
-    "Value": "48895C2408488974241048897C2418488B3D"
+    ]
   }
 ]
