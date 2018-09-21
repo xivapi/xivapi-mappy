@@ -26,7 +26,7 @@ namespace Mappy
             {
                 Logger.Add("Validating XIVAPI key...");
 
-                dynamic response = await $"http://xivapi.local/mappy/verify?key={key}".GetJsonAsync();
+                dynamic response = await $"http://xivapi.com/mappy/verify?key={key}".GetJsonAsync();
                 App.Instance.ToggleSubmitting(response.allowed);
             } 
             catch (Exception ex) 
@@ -61,7 +61,7 @@ namespace Mappy
             try {
                 // submit to api
                 string key = Properties.Settings.Default.ApiKey;
-                await $"http://xivapi.local/mappy/submit?key={key}".PostJsonAsync(new
+                await $"http://xivapi.com/mappy/submit?key={key}".PostJsonAsync(new
                 {
                     id,
                     type,
