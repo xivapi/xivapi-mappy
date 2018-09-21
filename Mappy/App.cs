@@ -320,6 +320,18 @@ namespace Mappy
             DebugViewer.Show();
         }
 
+        /// <summary>
+        /// Manually submit to API
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnSubmitToApi_Click(object sender, EventArgs e)
+        {
+            Logger.Add("Manually submitting XIVAPI data ...");
+            TrackingEnemies.SubmitData();
+            TrackingNpcs.SubmitData();
+        }
+
         #endregion
 
         #region Settings

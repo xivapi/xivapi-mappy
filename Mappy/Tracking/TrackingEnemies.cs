@@ -9,6 +9,14 @@ namespace Mappy.Tracking
         private static int total = 0;
 
         /// <summary>
+        /// Submit Enemy Data
+        /// </summary>
+        public void SubmitData()
+        {
+            Saver.SubmitEnemyData();
+        }
+
+        /// <summary>
         /// Scan for enemies
         /// </summary>
         public void Scan()

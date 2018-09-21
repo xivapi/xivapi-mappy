@@ -62,6 +62,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.btnSubmitToApi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -446,12 +447,32 @@
             this.label13.Size = new System.Drawing.Size(385, 1);
             this.label13.TabIndex = 62;
             // 
+            // btnSubmitToApi
+            // 
+            this.btnSubmitToApi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSubmitToApi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(22)))), ((int)(((byte)(165)))));
+            this.btnSubmitToApi.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSubmitToApi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
+            this.btnSubmitToApi.FlatAppearance.BorderSize = 0;
+            this.btnSubmitToApi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
+            this.btnSubmitToApi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
+            this.btnSubmitToApi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmitToApi.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.btnSubmitToApi.Location = new System.Drawing.Point(912, 12);
+            this.btnSubmitToApi.Name = "btnSubmitToApi";
+            this.btnSubmitToApi.Size = new System.Drawing.Size(176, 36);
+            this.btnSubmitToApi.TabIndex = 63;
+            this.btnSubmitToApi.Text = "SUBMIT TO API";
+            this.btnSubmitToApi.UseVisualStyleBackColor = false;
+            this.btnSubmitToApi.Click += new System.EventHandler(this.BtnSubmitToApi_Click);
+            // 
             // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1316, 841);
+            this.Controls.Add(this.btnSubmitToApi);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.logview);
             this.Controls.Add(this.label13);
@@ -530,6 +551,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnSubmitToApi;
     }
 }
 

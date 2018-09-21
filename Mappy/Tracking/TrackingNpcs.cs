@@ -11,6 +11,14 @@ namespace Mappy.Tracking
         private static int total = 0;
 
         /// <summary>
+        /// Submit NPC Data
+        /// </summary>
+        public void SubmitData()
+        {
+            Saver.SubmitNpcData();
+        }
+
+        /// <summary>
         /// Scan for entities
         /// </summary>
         public void Scan() 

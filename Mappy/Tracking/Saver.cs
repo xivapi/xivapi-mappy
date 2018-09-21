@@ -13,9 +13,10 @@ namespace Mappy.Tracking
         public List<Entity> savedEnemies = new List<Entity>();
         public List<Entity> savedNpcs = new List<Entity>();
 
-        //
-        // Add an enemy to save list
-        //
+        /// <summary>
+        /// Add an enemy to save list
+        /// </summary>
+        /// <param name="entity"></param>
         public void SaveEnemy(ActorItem entity)
         {
             try
@@ -27,14 +28,8 @@ namespace Mappy.Tracking
                 // Have we hit out minimum?
                 if (savedEnemies.Count == Properties.Settings.Default.MinimumSubmitQuantity)
                 {
-                    // submit the tracked data
-                    List<Entity> savedEnemiesList = new List<Entity>(savedEnemies);
-                    savedEnemies.Clear();
-                    API.SubmitData("BNPC", savedEnemiesList);
-
-                    // write to log
+                    SubmitEnemyData();
                     Logger.Add("> SAVE: Enemies");
-                    File.AppendAllText(AppHelper.getApplicationPath() + "/logs/enemies.json", JsonConvert.SerializeObject(savedEnemiesList) + Environment.NewLine);
                 }
             }
             catch (Exception ex)
@@ -44,9 +39,23 @@ namespace Mappy.Tracking
             
         }
 
-        //
-        // Add an npc to save list
-        //
+        /// <summary>
+        /// Submit Enemy data to the API
+        /// </summary>
+        public void SubmitEnemyData()
+        {
+            // submit the tracked data
+            List<Entity> savedEnemiesList = new List<Entity>(savedEnemies);
+            savedEnemies.Clear();
+
+            API.SubmitData("BNPC", savedEnemiesList);
+            File.AppendAllText(AppHelper.getApplicationPath() + "/logs/enemies.json", JsonConvert.SerializeObject(savedEnemiesList) + Environment.NewLine);
+        }
+
+        /// <summary>
+        /// Add an npc to save list
+        /// </summary>
+        /// <param name="entity"></param>
         public void SaveNpc(ActorItem entity)
         {
             try
@@ -58,20 +67,27 @@ namespace Mappy.Tracking
                 // Have we hit out minimum?
                 if (savedNpcs.Count == Properties.Settings.Default.MinimumSubmitQuantity)
                 {
-                    // submit the tracked data
-                    List<Entity> savedNpcsList = new List<Entity>(savedNpcs);
-                    savedNpcs.Clear();
-                    API.SubmitData("ENPC", savedNpcsList);
-
-                    // write to log
+                    SubmitNpcData();
                     Logger.Add("> Save: NPCs");
-                    File.AppendAllText(AppHelper.getApplicationPath() + "/logs/npcs.json", JsonConvert.SerializeObject(savedNpcsList) + Environment.NewLine);
                 }
             }
             catch (Exception ex)
             {
                 Logger.Exception(ex, "Saver -> SaveEnemy");
             }
+        }
+
+        /// <summary>
+        /// Submit NPC data to the API
+        /// </summary>
+        public void SubmitNpcData()
+        {
+            // submit the tracked data
+            List<Entity> savedNpcsList = new List<Entity>(savedNpcs);
+            savedNpcs.Clear();
+
+            API.SubmitData("ENPC", savedNpcsList);
+            File.AppendAllText(AppHelper.getApplicationPath() + "/logs/npcs.json", JsonConvert.SerializeObject(savedNpcsList) + Environment.NewLine);
         }
     }
 }

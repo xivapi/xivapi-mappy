@@ -67,13 +67,16 @@ namespace Mappy.Entities
             MapIndex = entity.MapIndex;
             MapTerritoryId = entity.MapTerritory;
             PlaceNameId = map.PlaceName.ID;
-            CoordinateX = Math.Round(entity.Coordinate.X, 3);
-            CoordinateY = Math.Round(entity.Coordinate.Y, 3);
-            CoordinateZ = Math.Round(entity.Coordinate.Z, 3);
-            PosX = Math.Round(MapHelper.ConvertCoordinatesIntoMapPosition((double)map.SizeFactor, (double)map.OffsetX, entity.Coordinate.X), 1);
-            PosY = Math.Round(MapHelper.ConvertCoordinatesIntoMapPosition((double)map.SizeFactor, (double)map.OffsetY, entity.Coordinate.Y), 1);
+
+            CoordinateX = Math.Round(entity.Coordinate.X, 6);
+            CoordinateY = Math.Round(entity.Coordinate.Y, 6);
+            CoordinateZ = Math.Round(entity.Coordinate.Z, 6);
+
+            PosX = Math.Round(MapHelper.ConvertCoordinatesIntoMapPosition((double)map.SizeFactor, (double)map.OffsetX, entity.Coordinate.X), 6);
+            PosY = Math.Round(MapHelper.ConvertCoordinatesIntoMapPosition((double)map.SizeFactor, (double)map.OffsetY, entity.Coordinate.Y), 6);
             PixelX = MapHelper.ConvertMapPositionToPixels(PosX, (double)map.SizeFactor);
             PixelY = MapHelper.ConvertMapPositionToPixels(PosY, (double)map.SizeFactor);
+
             HPMax = entity.HPMax;
             MPMax = entity.MPMax;
             Level = entity.Level;

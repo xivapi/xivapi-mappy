@@ -80,8 +80,8 @@ namespace Mappy
 
                 try
                 {
-                    double x = MapHelper.ConvertCoordinatesIntoMapPosition((double)Map.SizeFactor, (double)Map.OffsetX, player.X);
-                    double y = MapHelper.ConvertCoordinatesIntoMapPosition((double)Map.SizeFactor, (double)Map.OffsetY, player.Y);
+                    double x = Math.Round(MapHelper.ConvertCoordinatesIntoMapPosition((double)Map.SizeFactor, (double)Map.OffsetX, player.X), 2);
+                    double y = Math.Round(MapHelper.ConvertCoordinatesIntoMapPosition((double)Map.SizeFactor, (double)Map.OffsetY, player.Y), 2);
 
                     // set map pos
                     mappos.Text = String.Format("x {0} / y {1}  -  [{2} / {3}]",
@@ -347,8 +347,8 @@ namespace Mappy
                 };
 
                 // work out pixel position
-                double pixelX = Math.Round(((x - 1) * 50 * (double)Map.SizeFactor) - 16, 3);
-                double pixelY = Math.Round(((y - 1) * 50 * (double)Map.SizeFactor) - 16, 3);
+                double pixelX = Math.Round(((x - 1) * 50 * (double)Map.SizeFactor) - 16, 6);
+                double pixelY = Math.Round(((y - 1) * 50 * (double)Map.SizeFactor) - 16, 6);
 
                 if (pixelX == 0 || pixelY == 0) {
                     return;
