@@ -84,8 +84,8 @@ namespace Mappy
                     double y = Math.Round(MapHelper.ConvertCoordinatesIntoMapPosition((double)Map.SizeFactor, (double)Map.OffsetY, player.Y), 2);
 
                     // set map pos
-                    mappos.Text = String.Format("x {0} / y {1}  -  [{2} / {3}]",
-                        x, y, player.X, player.Y
+                    mappos.Text = String.Format("x {0} / y {1}  -  [{2} / {3}]   -   [OX: {4} / OY: {5}]",
+                        x, y, player.X, player.Y, Map.OffsetX, Map.OffsetY
                     );
                 }
                 catch { }
@@ -176,7 +176,7 @@ namespace Mappy
         {
             // convert to game positions
             double x = MapHelper.ConvertCoordinatesIntoMapPosition((double)Map.SizeFactor, (double)Map.OffsetX, player.Coordinate.X);
-            double y = MapHelper.ConvertCoordinatesIntoMapPosition((double)Map.SizeFactor, (double)Map.OffsetX, player.Coordinate.Y);
+            double y = MapHelper.ConvertCoordinatesIntoMapPosition((double)Map.SizeFactor, (double)Map.OffsetY, player.Coordinate.Y);
 
             // check if a player icon already exists or not
             if (MapPlayer.id == 0)

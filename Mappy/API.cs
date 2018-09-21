@@ -109,7 +109,7 @@ namespace Mappy
                     try
                     {
                         // set size factor and layer count
-                        Map.SizeFactor = (double)Map.SizeFactor / 100.0;
+                        Map.SizeFactor = (double)(Map.SizeFactor / 100.0);
                         Map.LayerCount = PlaceName.GameContentLinks.Map.PlaceName.Count;
 
                         // download map and set it on the map visual
