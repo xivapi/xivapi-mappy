@@ -63,7 +63,7 @@ namespace Mappy
             Logger.Add("Connecting to the FFXIV Game Memory ...");
             SetStatus("Connecting ...");
 
-            if (GameMemory.setGameProcess()) {
+            if (GameMemory.SetGameProcess()) {
                 InitializeTimer.Enabled = true;
             } else {
                 Logger.Add("Could not connect to the games memory, stupid question... Have you started FFXIV and logged in?");
@@ -77,7 +77,7 @@ namespace Mappy
         private void Initialized()
         {
             // set player name
-            ActorItem player = GameMemory.getPlayer();
+            ActorItem player = GameMemory.GetPlayer();
             labelPlayerName.Text = player.Name;
 
             // create timer
@@ -149,10 +149,10 @@ namespace Mappy
             // if scanning disabled, do nothing
             if (Scanning)
             {
-                ActorItem player = GameMemory.getPlayer();
+                ActorItem player = GameMemory.GetPlayer();
 
                 // if player has moved map, disable memory timer
-                if (TrackingPlayer.hasMovedMap())
+                if (TrackingPlayer.HasMovedMap())
                 {
                     // clear markers
                     TrackingEnemies.Clear();
@@ -196,7 +196,7 @@ namespace Mappy
         /// <param name="e"></param>
         private void InitializeTimer_Tick(object sender, EventArgs e)
         {
-            ActorItem player = GameMemory.getPlayer();
+            ActorItem player = GameMemory.GetPlayer();
 
             Logger.Add(" ");
             Logger.Add($"~ Hello {player.Name}!");
@@ -330,6 +330,31 @@ namespace Mappy
             Logger.Add("Manually submitting XIVAPI data ...");
             TrackingEnemies.SubmitData();
             TrackingNpcs.SubmitData();
+        }
+
+        /// <summary>
+        /// Mark a map as complete
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnMarkComplete_Click(object sender, EventArgs e)
+        {
+            Logger.Add("Manually submitting XIVAPI data ...");
+            TrackingEnemies.SubmitData();
+            TrackingNpcs.SubmitData();
+
+            Logger.Add("Marking the map as complete!");
+            API.MarkMapComplete(GameMemory.GetPlayer().MapID);
+        }
+
+        /// <summary>
+        /// Open the current map on XIVAPI
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnOpenXIVAPI_Click(object sender, EventArgs e)
+        {
+            API.OpenOnXivApi(GameMemory.GetPlayer().MapID);
         }
 
         #endregion

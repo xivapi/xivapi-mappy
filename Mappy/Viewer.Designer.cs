@@ -47,7 +47,7 @@
             this.scannpcs.TabIndex = 0;
             this.scannpcs.Text = "Scan NPCs";
             this.scannpcs.UseVisualStyleBackColor = false;
-            this.scannpcs.Click += new System.EventHandler(this.scannpcs_Click);
+            this.scannpcs.Click += new System.EventHandler(this.Scannpcs_Click);
             // 
             // output
             // 
@@ -76,7 +76,7 @@
             this.readtarget.TabIndex = 2;
             this.readtarget.Text = "Read Target";
             this.readtarget.UseVisualStyleBackColor = false;
-            this.readtarget.Click += new System.EventHandler(this.readtarget_Click);
+            this.readtarget.Click += new System.EventHandler(this.Readtarget_Click);
             // 
             // button1
             // 
@@ -89,7 +89,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Scan Enemies";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // readplayer
             // 
@@ -102,7 +102,7 @@
             this.readplayer.TabIndex = 4;
             this.readplayer.Text = "Read Player";
             this.readplayer.UseVisualStyleBackColor = false;
-            this.readplayer.Click += new System.EventHandler(this.readplayer_Click);
+            this.readplayer.Click += new System.EventHandler(this.Readplayer_Click);
             // 
             // Viewer
             // 

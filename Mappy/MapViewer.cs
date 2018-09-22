@@ -74,7 +74,7 @@ namespace Mappy
                 return;
             }
 
-            player = GameMemory.getPlayer();
+            player = GameMemory.GetPlayer();
             if (player.Name.Length > 0 && (int)Map.ID > 0) {
                 SetPlayerIcon(player);
 
@@ -112,6 +112,7 @@ namespace Mappy
 
                 // set map
                 Map = newMap;
+                string hightRestricted = (int)Map.LayerCount > 1 ? "Height Axis Restricted" : "Height Axis Tracking Unrestricted";
 
                 // apply downloaded map to background
                 Logger.Add($"Loading map: {Map.LocalFilename}");
@@ -119,7 +120,7 @@ namespace Mappy
 
                 // set map status
                 mapstatus.Text = String.Format("#{0} - {1} - {2} - {3} (Layers: {4} - {5})",
-                    Map.ID, Map.PlaceNameRegion.Name, Map.PlaceName.Name, Map.TerritoryType.PlaceNameZone.Name, Map.LayerCount, (int)Map.LayerCount > 1 ? "Height Axis Restricted" : "Height Axis Tracking Unrestricted"
+                    Map.ID, Map.PlaceNameRegion.Name, Map.PlaceName.Name, Map.TerritoryType.PlaceNameZone.Name, Map.LayerCount, hightRestricted
                 );
 
                 // set map info
@@ -128,7 +129,7 @@ namespace Mappy
                 );
 
                 // update status
-                App.Instance.SetStatus($"Currently mapping: {Map.PlaceName.Name} - {Map.TerritoryType.PlaceNameZone.Name}!");
+                App.Instance.SetStatus($"Currently mapping: #{Map.ID} - {Map.PlaceName.Name} - {Map.TerritoryType.PlaceNameZone.Name} - {hightRestricted}");
             }
             catch (Exception ex)
             {
@@ -142,7 +143,7 @@ namespace Mappy
         public void RequestLatestMap()
         {
             // show loading
-            uint MapId = GameMemory.getPlayer().MapID;
+            uint MapId = GameMemory.GetPlayer().MapID;
             API.GetMapImage(MapId);
         }
 
@@ -206,7 +207,7 @@ namespace Mappy
 
             // add trail, this is done by just dividing the pixel
 
-            int trailDistance = 150;
+            int trailDistance = 120;
             int trailDistanceMax = 200;
             int xDistance = 0;
             int yDistance = 0;

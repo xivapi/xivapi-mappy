@@ -36,9 +36,9 @@ namespace Mappy
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void scannpcs_Click(object sender, EventArgs e)
+        private void Scannpcs_Click(object sender, EventArgs e)
         {
-            player = GameMemory.getPlayer();
+            player = GameMemory.GetPlayer();
 
             // GameMemory.getNpcsAroundPlayer();
             List<ActorItem> entities = App.Instance.TrackingNpcs.GetEntities();
@@ -49,7 +49,7 @@ namespace Mappy
             // spit out all entities
             foreach(ActorItem entity in entities)
             {
-                printEntity(entity);
+                PrintEntity(entity);
             }
         }
 
@@ -58,9 +58,9 @@ namespace Mappy
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            player = GameMemory.getPlayer();
+            player = GameMemory.GetPlayer();
 
             // GameMemory.getNpcsAroundPlayer();
             List<ActorItem> entities = App.Instance.TrackingEnemies.GetEntities();
@@ -71,7 +71,7 @@ namespace Mappy
             // spit out all entities
             foreach (ActorItem entity in entities)
             {
-                printEntity(entity);
+                PrintEntity(entity);
             }
         }
 
@@ -80,15 +80,15 @@ namespace Mappy
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void readtarget_Click(object sender, EventArgs e)
+        private void Readtarget_Click(object sender, EventArgs e)
         {
-            player = GameMemory.getPlayer();
-            ActorItem entity = GameMemory.getCurrentTarget();
+            player = GameMemory.GetPlayer();
+            ActorItem entity = GameMemory.GetCurrentTarget();
 
             try
             {
                 output.Text = String.Format("Outputting Target:") + Environment.NewLine + Environment.NewLine;
-                printEntity(entity);
+                PrintEntity(entity);
             }
             catch (Exception ex)
             {
@@ -101,14 +101,14 @@ namespace Mappy
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void readplayer_Click(object sender, EventArgs e)
+        private void Readplayer_Click(object sender, EventArgs e)
         {
-            player = GameMemory.getPlayer();
+            player = GameMemory.GetPlayer();
 
             try
             {
                 output.Text = String.Format("Outputting Player:") + Environment.NewLine + Environment.NewLine;
-                printEntity(player);
+                PrintEntity(player);
             }
             catch (Exception ex)
             {
@@ -120,7 +120,7 @@ namespace Mappy
         /// Print an Actor Entity to the output window
         /// </summary>
         /// <param name="entity"></param>
-        private void printEntity(ActorItem entity)
+        private void PrintEntity(ActorItem entity)
         {
             output.AppendText(String.Format("Name: {0}", entity.Name) + Environment.NewLine);
             output.AppendText(String.Format("Level: {0}", entity.Level) + Environment.NewLine);

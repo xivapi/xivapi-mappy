@@ -63,6 +63,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.btnSubmitToApi = new System.Windows.Forms.Button();
+            this.btnMarkComplete = new System.Windows.Forms.Button();
+            this.btnOpenXIVAPI = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -466,12 +468,52 @@
             this.btnSubmitToApi.UseVisualStyleBackColor = false;
             this.btnSubmitToApi.Click += new System.EventHandler(this.BtnSubmitToApi_Click);
             // 
+            // btnMarkComplete
+            // 
+            this.btnMarkComplete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMarkComplete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(22)))), ((int)(((byte)(165)))));
+            this.btnMarkComplete.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnMarkComplete.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
+            this.btnMarkComplete.FlatAppearance.BorderSize = 0;
+            this.btnMarkComplete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
+            this.btnMarkComplete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
+            this.btnMarkComplete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarkComplete.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.btnMarkComplete.Location = new System.Drawing.Point(728, 12);
+            this.btnMarkComplete.Name = "btnMarkComplete";
+            this.btnMarkComplete.Size = new System.Drawing.Size(176, 36);
+            this.btnMarkComplete.TabIndex = 64;
+            this.btnMarkComplete.Text = "MARK COMPLETE";
+            this.btnMarkComplete.UseVisualStyleBackColor = false;
+            this.btnMarkComplete.Click += new System.EventHandler(this.BtnMarkComplete_Click);
+            // 
+            // btnOpenXIVAPI
+            // 
+            this.btnOpenXIVAPI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOpenXIVAPI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(22)))), ((int)(((byte)(165)))));
+            this.btnOpenXIVAPI.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnOpenXIVAPI.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
+            this.btnOpenXIVAPI.FlatAppearance.BorderSize = 0;
+            this.btnOpenXIVAPI.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
+            this.btnOpenXIVAPI.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
+            this.btnOpenXIVAPI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOpenXIVAPI.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.btnOpenXIVAPI.Location = new System.Drawing.Point(584, 12);
+            this.btnOpenXIVAPI.Name = "btnOpenXIVAPI";
+            this.btnOpenXIVAPI.Size = new System.Drawing.Size(137, 36);
+            this.btnOpenXIVAPI.TabIndex = 65;
+            this.btnOpenXIVAPI.Text = "OPEN XIVAPI";
+            this.btnOpenXIVAPI.UseVisualStyleBackColor = false;
+            this.btnOpenXIVAPI.Click += new System.EventHandler(this.BtnOpenXIVAPI_Click);
+            // 
             // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1316, 841);
+            this.Controls.Add(this.btnOpenXIVAPI);
+            this.Controls.Add(this.btnMarkComplete);
             this.Controls.Add(this.btnSubmitToApi);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.logview);
@@ -552,6 +594,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnSubmitToApi;
+        private System.Windows.Forms.Button btnMarkComplete;
+        private System.Windows.Forms.Button btnOpenXIVAPI;
     }
 }
 

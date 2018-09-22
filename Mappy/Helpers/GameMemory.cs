@@ -15,7 +15,7 @@ namespace Mappy.Helpers
         /// Set the game process
         /// </summary>
         /// <returns></returns>
-        public static bool setGameProcess()
+        public static bool SetGameProcess()
         {
             Logger.Add("Looking for the FFXIV game process (ffxiv_dx11.exe)");
 
@@ -49,7 +49,7 @@ namespace Mappy.Helpers
         /// Get the current player actor
         /// </summary>
         /// <returns></returns>
-        public static ActorItem getPlayer()
+        public static ActorItem GetPlayer()
         {
             Reader.GetActors();
             return ActorItem.CurrentUser;
@@ -59,7 +59,7 @@ namespace Mappy.Helpers
         /// Get the current target actor
         /// </summary>
         /// <returns></returns>
-        public static ActorItem getCurrentTarget()
+        public static ActorItem GetCurrentTarget()
         {
             try
             {
@@ -71,14 +71,14 @@ namespace Mappy.Helpers
                 Logger.Exception(ex, "GameMemory -> GetCurrentTarget");
             }
 
-            return getPlayer();
+            return GetPlayer();
         }
 
         /// <summary>
         /// Get all monsters around the player in memory
         /// </summary>
         /// <returns></returns>
-        public static List<ActorItem> getMonstersAroundPlayer()
+        public static List<ActorItem> GetMonstersAroundPlayer()
         {
             ActorResult readResult = Reader.GetActors();
             return readResult.CurrentMonsters.Select(e => e.Value).ToList();
@@ -88,7 +88,7 @@ namespace Mappy.Helpers
         /// Get all npcs around the player in memory
         /// </summary>
         /// <returns></returns>
-        public static List<ActorItem> getNpcsAroundPlayer()
+        public static List<ActorItem> GetNpcsAroundPlayer()
         {
             ActorResult readResult = Reader.GetActors();
             return readResult.CurrentNPCs.Select(e => e.Value).ToList();

@@ -21,9 +21,9 @@ namespace Mappy.Tracking
         /// </summary>
         public void Scan()
         {
-            Player = GameMemory.getPlayer();
+            Player = GameMemory.GetPlayer();
 
-            List<ActorItem> entities = GameMemory.getMonstersAroundPlayer();
+            List<ActorItem> entities = GameMemory.GetMonstersAroundPlayer();
 
             if (entities.Count == 0)
             {
@@ -64,9 +64,9 @@ namespace Mappy.Tracking
         /// <returns></returns>
         public List<ActorItem> GetEntities()
         {
-            Player = GameMemory.getPlayer();
+            Player = GameMemory.GetPlayer();
 
-            List<ActorItem> entities = GameMemory.getMonstersAroundPlayer();
+            List<ActorItem> entities = GameMemory.GetMonstersAroundPlayer();
 
             // remove junk
             for (var i = 0; i < entities.Count; i++)

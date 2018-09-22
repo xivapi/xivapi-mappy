@@ -17,6 +17,30 @@ namespace Mappy
         private static bool requestInAction = false;
 
         /// <summary>
+        /// Open map in the users default 
+        /// </summary>
+        /// <param name="map"></param>
+        public static void OpenOnXivApi(uint map)
+        {
+            string url = $"http://xivapi.com/mappy/map/open?key={Properties.Settings.Default.ApiKey}&map={map}";
+            System.Diagnostics.Process.Start(url);
+        }
+
+        /// <summary>
+        /// Mark a map as completed
+        /// </summary>
+        /// <param name="key"></param>
+        public static async void MarkMapComplete(uint map)
+        {
+            try {
+                dynamic response = await $"http://xivapi.com/mappy/mark/complete?key={Properties.Settings.Default.ApiKey}&map={map}".GetJsonAsync();
+                App.Instance.SetStatus("This map has been marked as complete!");
+            } catch (Exception ex) {
+                Logger.Exception(ex, "Mappy -> CheckApiKey");
+            }
+        }
+
+        /// <summary>
         /// Check an API key can submit data to XIVAPI
         /// </summary>
         /// <param name="key"></param>
@@ -34,6 +58,7 @@ namespace Mappy
                 Logger.Exception(ex, "Mappy -> CheckApiKey");
             }
         }
+
 
         /// <summary>
         /// Submit some data (Even if you hard code this, there are server checks XD)

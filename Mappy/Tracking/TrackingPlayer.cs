@@ -14,9 +14,9 @@ namespace Mappy.Tracking
         // if it returns true, it means the player has moved
         // maps, otherwise false the map has not changed
         //
-        public bool hasMovedMap() 
+        public bool HasMovedMap() 
         {
-            ActorItem Player = GameMemory.getPlayer();
+            ActorItem Player = GameMemory.GetPlayer();
 
             // Check for map id
             if (Player.MapID > 0 && Player.MapID != MapId) 
@@ -32,7 +32,7 @@ namespace Mappy.Tracking
             return false;
         }
 
-        public uint getMapId()
+        public uint GetMapId()
         {
             return MapId;
         }
