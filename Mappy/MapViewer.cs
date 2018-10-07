@@ -15,6 +15,8 @@ namespace Mappy
         // Map Icons
         private MapIcon MapPlayer;
         private ActorItem player;
+        private MapIcon MapCameraHeading;
+        private float cameraHeading;
         private List<MapIcon> MapTrail = new List<MapIcon>();
         private List<MapIcon> MapTrailMini = new List<MapIcon>();
         private List<MapIcon> MapIcons = new List<MapIcon>();
@@ -75,8 +77,9 @@ namespace Mappy
             }
 
             player = GameMemory.GetPlayer();
+            cameraHeading = GameMemory.GetCameraHeading();
             if (player.Name.Length > 0 && (int)Map.ID > 0) {
-                SetPlayerIcon(player);
+                SetPlayerIcon(player, cameraHeading);
 
                 try
                 {
@@ -173,7 +176,7 @@ namespace Mappy
         /// Set the player icon on the map
         /// </summary>
         /// <param name="player"></param>
-        private void SetPlayerIcon(ActorItem player)
+        private void SetPlayerIcon(ActorItem player, float cameraHeading)
         {
             // convert to game positions
             double x = MapHelper.ConvertCoordinatesIntoMapPosition((double)Map.SizeFactor, (double)Map.OffsetX, player.Coordinate.X);
@@ -190,7 +193,7 @@ namespace Mappy
             }
 
             // reset graphic
-            Bitmap bitmap = AppHelper.createBitmap("assets\\player.png");
+            Bitmap bitmap = AppHelper.createBitmap("assets\\playerOnly.png");
             MapPlayer.icon = bitmap;
             MapPlayer.width = bitmap.Width;
             MapPlayer.height = bitmap.Height;
@@ -204,6 +207,23 @@ namespace Mappy
             MapPlayer.y = pixelY;
             MapPlayer.angle = Math.Abs(player.Heading * (180 / Math.PI) - 180);
             MapPlayer.setRotation();
+
+
+            // reset graphic
+            Bitmap bitmap2 = AppHelper.createBitmap("assets\\camera.png");
+            MapCameraHeading.icon = bitmap2;
+            MapCameraHeading.width = bitmap.Width;
+            MapCameraHeading.height = bitmap.Height;
+
+            // work out pixel position
+            int pixelX2 = Convert.ToInt32((x - 1) * 50 * (double)Map.SizeFactor) - (MapCameraHeading.icon.Size.Width / 2);
+            int pixelY2 = Convert.ToInt32((y - 1) * 50 * (double)Map.SizeFactor) - (MapCameraHeading.icon.Size.Height / 2);
+
+            // set position and direction
+            MapCameraHeading.x = pixelX2;
+            MapCameraHeading.y = pixelY2;
+            MapCameraHeading.angle = (Math.Abs(cameraHeading * (180 / Math.PI) - 180) + 180) % 360;
+            MapCameraHeading.setRotation();
 
             // add trail, this is done by just dividing the pixel
 
@@ -548,6 +568,16 @@ namespace Mappy
             // if player icon set
             if (MapPlayer.id == 1)
             {
+                try
+                {
+                    int new_x = MapCameraHeading.x + offsetX;
+                    int new_y = MapCameraHeading.y + offsetY;
+
+                    lock (MapCameraHeading.icon)
+                    e.Graphics.DrawImage(MapCameraHeading.icon, new_x, new_y, MapPlayerIconSizeWidth, MapPlayerIconSizeHeight);
+                }
+                catch { }
+
                 try
                 {
                     // get new position

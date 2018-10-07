@@ -144,5 +144,14 @@
       0,
       0
     ]
+  },
+  {
+    "Key": "CAMERA",
+    "Value": "10000000788301000000000000000000******0000000000FFFFFFFF00000000",
+    "ASMSignature": false,
+    "PointerPath": [
+      0,
+      0
+    ]
   }
 ]
