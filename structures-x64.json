@@ -227,5 +227,9 @@
     "Previous": 160,
     "Focus": 136,
     "CurrentID": 192
+  },
+  "CameraInfo": {
+    "Heading": 134,
+    "Elevation": 138
   }
 }

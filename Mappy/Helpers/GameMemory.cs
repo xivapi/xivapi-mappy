@@ -93,5 +93,11 @@ namespace Mappy.Helpers
             ActorResult readResult = Reader.GetActors();
             return readResult.CurrentNPCs.Select(e => e.Value).ToList();
         }
+
+        public static float GetCameraHeading()
+        {
+            var source = MemoryHandler.Instance.GetByteArray(Scanner.Instance.Locations["CAMERA"], 512);
+            return BitConverter.ToSingle(source, 0x134);
+        }
     }
 }
