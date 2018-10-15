@@ -22,7 +22,7 @@ namespace Mappy
         /// <param name="map"></param>
         public static void OpenOnXivApi(uint map)
         {
-            string url = $"http://xivapi.com/mappy/map/open?key={Properties.Settings.Default.ApiKey}&map={map}";
+            string url = $"https://xivapi.com/mappy/map/open?key={Properties.Settings.Default.ApiKey}&map={map}";
             System.Diagnostics.Process.Start(url);
         }
 
@@ -33,7 +33,7 @@ namespace Mappy
         public static async void MarkMapComplete(uint map)
         {
             try {
-                dynamic response = await $"http://xivapi.com/mappy/mark/complete?key={Properties.Settings.Default.ApiKey}&map={map}".GetJsonAsync();
+                dynamic response = await $"https://xivapi.com/mappy/mark/complete?key={Properties.Settings.Default.ApiKey}&map={map}".GetJsonAsync();
                 App.Instance.SetStatus("This map has been marked as complete!");
             } catch (Exception ex) {
                 Logger.Exception(ex, "Mappy -> CheckApiKey");
@@ -50,7 +50,7 @@ namespace Mappy
             {
                 Logger.Add("Validating XIVAPI key...");
 
-                dynamic response = await $"http://xivapi.com/mappy/verify?key={key}".GetJsonAsync();
+                dynamic response = await $"https://xivapi.com/mappy/verify?key={key}".GetJsonAsync();
                 App.Instance.ToggleSubmitting(response.allowed);
             } 
             catch (Exception ex) 
@@ -86,7 +86,7 @@ namespace Mappy
             try {
                 // submit to api
                 string key = Properties.Settings.Default.ApiKey;
-                await $"http://xivapi.com/mappy/submit?key={key}".PostJsonAsync(new
+                await $"https://xivapi.com/mappy/submit?key={key}".PostJsonAsync(new
                 {
                     id,
                     type,
@@ -115,14 +115,14 @@ namespace Mappy
             try
             {
                 // get map json
-                Logger.Add($"[GET] http://xivapi.com/Map/{id}");
-                HttpResponseMessage mapRequest = await new Url($"http://xivapi.com/Map/{id}").GetAsync();
+                Logger.Add($"[GET] https://xivapi.com/Map/{id}");
+                HttpResponseMessage mapRequest = await new Url($"https://xivapi.com/Map/{id}").GetAsync();
                 dynamic Map = JsonConvert.DeserializeObject(mapRequest.Content.ReadAsStringAsync().Result);
                 Logger.Add($"[RESPONSE] MapID: {Map.ID}");
 
                 // get placename json
-                Logger.Add($"[GET] http://xivapi.com/PlaceName/{Map.PlaceName.ID}");
-                HttpResponseMessage placeNameRequest = await new Url($"http://xivapi.com/PlaceName/{Map.PlaceName.ID}").GetAsync();
+                Logger.Add($"[GET] https://xivapi.com/PlaceName/{Map.PlaceName.ID}");
+                HttpResponseMessage placeNameRequest = await new Url($"https://xivapi.com/PlaceName/{Map.PlaceName.ID}").GetAsync();
                 dynamic PlaceName = JsonConvert.DeserializeObject(placeNameRequest.Content.ReadAsStringAsync().Result);
                 Logger.Add($"[RESPONSE] PlaceNameID: {PlaceName.ID}");
 
@@ -138,8 +138,8 @@ namespace Mappy
                         Map.LayerCount = PlaceName.GameContentLinks.Map.PlaceName.Count;
 
                         // download map and set it on the map visual
-                        Logger.Add($"[DOWNLOAD] http://xivapi.com{Map.MapFilename}");
-                        Map.LocalFilename = DownloadImage($"http://xivapi.com{Map.MapFilename}");
+                        Logger.Add($"[DOWNLOAD] https://xivapi.com{Map.MapFilename}");
+                        Map.LocalFilename = DownloadImage($"https://xivapi.com{Map.MapFilename}");
                         App.Instance.MapViewer.SetMapVisual(Map);
 
                         // set axis restriction
