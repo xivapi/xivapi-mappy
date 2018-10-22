@@ -16,11 +16,11 @@ Get the project setup:
 
 Run the app with:
 
-- Start it: `electron .`
+- Start it: `electron .` or (`bash bin/electron`)
 
 JS/CSS compiling with:
 
-- Local: `yarn run encore dev --watch`
-- Production: `yarn dist`
+- Local: `yarn run encore dev --watch` (or `bash bin/webpack`
+- Production: `yarn dist` (or `bash bin/webpack_dist`)
 
 > If you need SASS installed: `yarn add sass-loader node-sass --dev`
