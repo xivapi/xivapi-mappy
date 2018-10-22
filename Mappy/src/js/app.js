@@ -9,3 +9,6 @@ window.Bootstrap = require('bootstrap');
  */
 import Window from './xiv/Window';
 Window.watch();
+
+import ButtonActions from './xiv/ButtonActions'
+ButtonActions.watch();
