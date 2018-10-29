@@ -1,32 +1,30 @@
-.options{
+.options {
     position: absolute;
-    top: 80px;
-    background: #0d0057b7;
-    background-repeat: repeat;
-    background-size: auto;
-    color: #fff;
-    border: 2px solid;
-    border-color: black;
-    padding: 10px 10px 0px 10px;
-    width: 100%;
-    height: 86%;
+    z-index: 10;
 
-    ul{
-        list-style-type: none;
-        padding: 5px;
-        
-        > li{
-            padding:5px;
-        }
+    // center it
+    top: 100px; left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 720px;
+    padding: 30px 20px;
+    background: #353535;
+    border: solid 1px #000;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+    border-radius: 5px;
+
+    // hide
+    display: none;
+
+    h3 {
+        margin-bottom: 20px;
     }
 
-    .apikey{
-        width: 225px;
+    &.open {
+        display: block;
     }
-}
 
-.options-hidden{
-    display:none;
-
-    
+    .api-status {
+        color: yellow;
+    }
 }

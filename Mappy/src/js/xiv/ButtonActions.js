@@ -16,7 +16,7 @@ class ButtonActions
     {
         document.getElementById('Action.ToggleOptionsView').onclick = event => {
             const ui = document.getElementById('options');
-            ui.classList.toggle('options-hidden');
+            ui.classList.toggle('open');
         };
     }
 }

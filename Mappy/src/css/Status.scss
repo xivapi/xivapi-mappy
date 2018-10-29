@@ -1,0 +1,13 @@
+.status {
+    position: absolute;
+    z-index: 5;
+
+    top: 80px; left: 0; right: 0;
+    padding: 0 25px;
+
+    background-color: #222;
+    border-bottom: solid 1px #000;
+    color: #999;
+    height: 50px;
+    line-height: 50px;
+}

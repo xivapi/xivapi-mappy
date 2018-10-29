@@ -17,53 +17,19 @@
             <button id="LauncherWindowClose">Close</button>
         -->
 
-        <header>
-            <div>
-                <div>
-                    <img src="https://xivapi.com/img-misc/Mendacity.png" height="48">
-                </div>
-                <h1>
-                    XIVAPI MAPPY
-                </h1>
-            </div>
-            <div>
-                <button class="btn btn-outline-light">Mark Complete</button>
-                <button class="btn btn-light">XIVAPI</button>
-                <button class="btn btn-light" id="Action.ToggleOptionsView">Options</button>
-            </div>
-        </header>
+        <header data-partial="header.html"></header>
+
+        <!-- Status Bar -->
+        <section class="status" data-partial="status.html"></section>
+
+        <!-- Log and Map -->
         <main>
-            <div>
-                Map Stuffs
-            </div>
-            <div class="options options-hidden" id="options">
-                <div>
-                    <h2>
-                        XIVAPI Key
-                    </h2>
-                    <div>
-                        <ul>
-                            <li><input type="text" id="XIVAPI-Key" class="apikey" placeholder="XIVAPI Key"></li>
-                            <li><input type="checkbox" id="XIVAPI-Key-Checkbox"> Submit to API</input></li>
-                            <li>Enter your apps key, only valid keys can submit data to the API. Ask @Vekien for approval.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <h2>
-                        Options
-                    </h2>
-                    <p class="checkboxes">
-                        <ul>
-                            <li><input type="checkbox"> Keep window always on top</input></li>
-                            <li><input type="checkbox"> Keep map boundaries within window</input></li>
-                            <li><input type="checkbox"> Ignore Non-English Entities</input></li>
-                            <li><input type="checkbox"> Extend log messages</input></li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
+            <div class="log" data-partial="log.html"></div>
+            <div class="map" data-partial="map.html"></div>
         </main>
+
+        <!-- Modals -->
+        <div data-partial="options.html"></div>
 
         <!-- APP Javascript -->
         <script type="text/javascript" src="./assets/js/app.js"></script>

@@ -1,3 +1,9 @@
+html, body {
+    background-color: #222;
+    color: #eee;
+    min-height: 100%;
+}
+
 header {
     position: absolute;
     z-index: 50;
@@ -6,14 +12,14 @@ header {
     color: #fff;
     display: flex;
 
-    background: #2c0062;
-    background: -moz-linear-gradient(top, #2c0062 0%, #1c004a 100%);
-    background: -webkit-linear-gradient(top, #2c0062 0%,#1c004a 100%);
-    background: linear-gradient(to bottom, #2c0062 0%,#1c004a 100%);
+    background: #5723a2;
+    background: -moz-linear-gradient(left,#5723a2 0,#7a42c9 100%);
+    background: -webkit-linear-gradient(left,#5723a2,#7a42c9);
+    background: linear-gradient(90deg,#5723a2 0,#7a42c9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5723a2",endColorstr="#7a42c9",GradientType=1);
 
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     border-bottom: solid 1px #000;
-
 
     > div:first-of-type {
         flex: 0 1 40%;
@@ -35,7 +41,7 @@ header {
 
         > h1 {
             font-size: 24px;
-            font-weight: 600;
+            font-weight: 300;
             padding: 25px 0 0 20px;
         }
     }
@@ -52,5 +58,6 @@ header {
 }
 
 main {
-    margin-top: 80px;
+    position: absolute;
+    top: 130px; left: 0; bottom: 0; right: 0;
 }
