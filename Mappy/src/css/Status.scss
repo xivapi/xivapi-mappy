@@ -10,4 +10,26 @@
     color: #999;
     height: 50px;
     line-height: 50px;
+
+    display: flex;
+
+    > div:first-of-type {
+        flex: 0 1 calc(100% - 300px);
+    }
+
+    > div:last-of-type {
+        border-left: solid 1px #666;
+        flex: 0 1 300px;
+        padding: 0 10px;
+        text-align: center;
+
+        span {
+            color: #38e844;
+        }
+
+        em {
+            display: inline-block;
+            padding: 0 10px;
+        }
+    }
 }

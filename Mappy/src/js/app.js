@@ -1,9 +1,9 @@
 import PartialIncludes from './misc/PartialIncludes';
 import Logger from './xiv/Logger';
+import Status from './xiv/Status';
 import Window from './xiv/Window';
 import ButtonActions from './xiv/ButtonActions'
-
-
+import Api from './xiv/Api'
 
 /**
  * Just JQuery things
@@ -28,9 +28,24 @@ PartialIncludes.include(() => {
      * Watch window actions
      */
     Window.watch();
+
     /**
      * Watch for button actions
      */
-
     ButtonActions.watch();
+
+    /**
+     * Test
+     */
+    Api.getMap(18, response => {
+        Status.text(`Map: ${response.PlaceName.Name}`);
+
+        setTimeout(function() {
+            $('.map').css({
+                'background-image': `https://xivapi.com${response.MapFilename}`
+            });
+        }, 2000);
+
+        console.log(response);
+    });
 });
