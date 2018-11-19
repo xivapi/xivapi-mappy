@@ -102,7 +102,7 @@
             this.readplayer.TabIndex = 4;
             this.readplayer.Text = "Read Player";
             this.readplayer.UseVisualStyleBackColor = false;
-            this.readplayer.Click += new System.EventHandler(this.Readplayer_Click);
+            this.readplayer.Click += new System.EventHandler(this.ReadPlayer_Click);
             // 
             // Viewer
             // 

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Windows.Forms;
 using Mappy.Helpers;
 using Sharlayan.Core;
 
@@ -49,8 +50,11 @@ namespace Mappy.Tracking
                     LogEntity("BNPC", entity);
 
                     // add to map
-                    App.Instance.MapViewer.AddEnemyIcon(entity);
-                    App.Instance.labelTotalEnemies.Text = total.ToString();
+                    App.Instance.Invoke((MethodInvoker) delegate
+                    {
+                        App.Instance.MapViewer.AddEnemyIcon(entity);
+                        App.Instance.labelTotalEnemies.Text = total.ToString();
+                    });
 
                     // save enemy
                     Saver.SaveEnemy(entity);
@@ -82,7 +86,7 @@ namespace Mappy.Tracking
             }
 
             return entities;
-        }       
+        }
 
         /// <summary>
         /// Clear all recorded map markers
@@ -90,6 +94,6 @@ namespace Mappy.Tracking
         public void Clear()
         {
             list.Clear();
-        }   
+        }
     }
 }

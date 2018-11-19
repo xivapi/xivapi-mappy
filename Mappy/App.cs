@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Timers;
 using Mappy.Tracking;
 using Mappy.Helpers;
-using Sharlayan.Core;
 using System.Drawing;
+using Sharlayan.Core;
 
 namespace Mappy
 {
@@ -20,6 +20,7 @@ namespace Mappy
         public TrackingNpcs TrackingNpcs = new TrackingNpcs();
         public TrackingPlayer TrackingPlayer = new TrackingPlayer();
 
+        /// <inheritdoc />
         /// <summary>
         /// app
         /// </summary>
@@ -63,9 +64,12 @@ namespace Mappy
             Logger.Add("Connecting to the FFXIV Game Memory ...");
             SetStatus("Connecting ...");
 
-            if (GameMemory.SetGameProcess()) {
+            if (GameMemory.SetGameProcess())
+            {
                 InitializeTimer.Enabled = true;
-            } else {
+            }
+            else
+            {
                 Logger.Add("Could not connect to the games memory, stupid question... Have you started FFXIV and logged in?");
                 SetStatus("Could not connect to FFXIV Game Memory!");
             }
@@ -82,7 +86,8 @@ namespace Mappy
 
             // create timer
             System.Timers.Timer aTimer = new System.Timers.Timer();
-            aTimer.Elapsed += (sender, e) => {
+            aTimer.Elapsed += (sender, e) =>
+            {
                 ScanIntervalAction();
             };
             aTimer.Interval = Properties.Settings.Default.ScanTimerSpeed;
@@ -164,7 +169,7 @@ namespace Mappy
 
                     // get the map viewer to request latest map,
                     // once it has done it, it will renable memory timer
-                    MapViewer.RequestLatestMap();                    
+                    MapViewer.RequestLatestMap();
                 }
                 else
                 {
@@ -197,6 +202,10 @@ namespace Mappy
         private void InitializeTimer_Tick(object sender, EventArgs e)
         {
             ActorItem player = GameMemory.GetPlayer();
+            if (player == null)
+            {
+                throw new NullReferenceException("Game is started but you are not in game world!");
+            }
 
             Logger.Add(" ");
             Logger.Add($"~ Hello {player.Name}!");
@@ -293,7 +302,7 @@ namespace Mappy
         /// <param name="text"></param>
         public void SetStatus(string text)
         {
-            labelStatus.Text = text;
+            App.Instance.Invoke((MethodInvoker)delegate { labelStatus.Text = text; });
         }
 
         #endregion
@@ -367,8 +376,8 @@ namespace Mappy
             Properties.Settings.Default.Submit = Settings_Submit.Checked;
             Properties.Settings.Default.Save();
 
-            Logger.Add(enable 
-                ? "XIVAPI key enabled! Data will submit. If you have enabled the API key after memory scan, you will need to restart the app to pickup the existing data." 
+            Logger.Add(enable
+                ? "XIVAPI key enabled! Data will submit. If you have enabled the API key after memory scan, you will need to restart the app to pickup the existing data."
                 : "XIVAPI key does not have permission to submit data. Ask @Vekien for permission!"
             );
         }
@@ -391,7 +400,8 @@ namespace Mappy
             Properties.Settings.Default.Submit = Settings_Submit.Checked;
             Properties.Settings.Default.Save();
 
-            if (Settings_Submit.Checked) {
+            if (Settings_Submit.Checked)
+            {
                 API.CheckApiKey(Properties.Settings.Default.ApiKey);
             }
         }

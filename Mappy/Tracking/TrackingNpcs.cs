@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Windows.Forms;
 using Mappy.Helpers;
 using Sharlayan.Core;
 
@@ -21,7 +21,7 @@ namespace Mappy.Tracking
         /// <summary>
         /// Scan for entities
         /// </summary>
-        public void Scan() 
+        public void Scan()
         {
             Player = GameMemory.GetPlayer();
 
@@ -33,7 +33,7 @@ namespace Mappy.Tracking
             }
 
             // loop through npcs
-            foreach (var entity in entities) 
+            foreach (var entity in entities)
             {
                 // check if we're ignoring this entity
                 if (IsIgnored("ENPC", entity))
@@ -51,8 +51,11 @@ namespace Mappy.Tracking
                     LogEntity("ENPC", entity);
 
                     // add to map
-                    App.Instance.MapViewer.AddNpcIcon(entity);
-                    App.Instance.labelTotalNpcs.Text = total.ToString();
+                    App.Instance.Invoke((MethodInvoker)delegate
+                    {
+                        App.Instance.MapViewer.AddNpcIcon(entity);
+                        App.Instance.labelTotalNpcs.Text = total.ToString();
+                    });
 
                     // save npc to file
                     Saver.SaveNpc(entity);

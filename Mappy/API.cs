@@ -8,6 +8,7 @@ using System.Net;
 using System.IO;
 using Mappy.Entities;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace Mappy
 {
@@ -32,10 +33,13 @@ namespace Mappy
         /// <param name="key"></param>
         public static async void MarkMapComplete(uint map)
         {
-            try {
+            try
+            {
                 dynamic response = await $"https://xivapi.com/mappy/mark/complete?key={Properties.Settings.Default.ApiKey}&map={map}".GetJsonAsync();
                 App.Instance.SetStatus("This map has been marked as complete!");
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 Logger.Exception(ex, "Mappy -> CheckApiKey");
             }
         }
@@ -46,14 +50,14 @@ namespace Mappy
         /// <param name="key"></param>
         public static async void CheckApiKey(string key)
         {
-            try 
+            try
             {
                 Logger.Add("Validating XIVAPI key...");
 
                 dynamic response = await $"https://xivapi.com/mappy/verify?key={key}".GetJsonAsync();
                 App.Instance.ToggleSubmitting(response.allowed);
-            } 
-            catch (Exception ex) 
+            }
+            catch (Exception ex)
             {
                 Logger.Exception(ex, "Mappy -> CheckApiKey");
             }
@@ -68,12 +72,13 @@ namespace Mappy
         public static async void SubmitData(string type, List<Entity> data)
         {
             // if submit turned off
-            if (!Properties.Settings.Default.Submit || String.IsNullOrEmpty(Properties.Settings.Default.ApiKey)) {
+            if (!Properties.Settings.Default.Submit || String.IsNullOrEmpty(Properties.Settings.Default.ApiKey))
+            {
                 return;
             }
 
             total++;
-            App.Instance.labelTotalSubmits.Text = total.ToString();
+            App.Instance.Invoke((MethodInvoker)delegate { App.Instance.labelTotalSubmits.Text = total.ToString(); });
 
             // assign a payload id
             Random random = new Random();
@@ -81,9 +86,12 @@ namespace Mappy
 
             // log payload information
             Logger.Add($"---> [#{id}] Submitting json data to xivapi");
-            App.Instance.labelSubmitStatus.Text = $"(API) Sending payload: #{id}";
-
-            try {
+            App.Instance.Invoke((MethodInvoker)delegate
+           {
+               App.Instance.labelSubmitStatus.Text = $"(API) Sending payload: #{id}";
+           });
+            try
+            {
                 // submit to api
                 string key = Properties.Settings.Default.ApiKey;
                 await $"https://xivapi.com/mappy/submit?key={key}".PostJsonAsync(new
@@ -93,8 +101,13 @@ namespace Mappy
                     data,
                 });
                 Logger.Add($"---> [#{id}] Json data submitted successfully");
-                App.Instance.labelSubmitStatus.Text = $"(API) Payload #{id} sent";
-            } catch (Exception ex) {
+                App.Instance.Invoke((MethodInvoker) delegate
+                {
+                    App.Instance.labelSubmitStatus.Text = $"(API) Payload #{id} sent";
+                });
+            }
+            catch (Exception ex)
+            {
                 Logger.Exception(ex, $"COULD NOT SAVE PAYLOAD: [#{id}]");
             }
         }
@@ -106,7 +119,8 @@ namespace Mappy
         public static async void GetMapImage(uint id)
         {
             // if a request is in action or id is zero, do nothing
-            if (requestInAction || id == 0) {
+            if (requestInAction || id == 0)
+            {
                 return;
             }
 

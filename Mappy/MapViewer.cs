@@ -28,7 +28,7 @@ namespace Mappy
         public dynamic Map;
         public Bitmap MapBackground = null;
         public bool Scanning = false;
-        
+
         // init
         public MapViewer()
         {
@@ -38,7 +38,7 @@ namespace Mappy
 
         public void SetMapCountdown(string text)
         {
-            mapCountdown.Text = text;
+            App.Instance.Invoke((MethodInvoker)delegate { mapCountdown.Text = text; });
         }
 
         //
@@ -54,7 +54,8 @@ namespace Mappy
         {
             // create timer
             System.Timers.Timer aTimer = new System.Timers.Timer();
-            aTimer.Elapsed += (sender, e) => {
+            aTimer.Elapsed += (sender, e) =>
+            {
                 if (Scanning)
                 {
                     SetPlayerPosition();
@@ -70,12 +71,14 @@ namespace Mappy
         //
         private void SetPlayerPosition()
         {
-            if (!Scanning) {
+            if (!Scanning)
+            {
                 return;
             }
 
             player = GameMemory.GetPlayer();
-            if (player.Name.Length > 0 && (int)Map.ID > 0) {
+            if (player.Name.Length > 0 && (int)Map.ID > 0)
+            {
                 SetPlayerIcon(player);
 
                 try
@@ -84,9 +87,12 @@ namespace Mappy
                     double y = Math.Round(MapHelper.ConvertCoordinatesIntoMapPosition((double)Map.SizeFactor, (double)Map.OffsetY, player.Y), 2);
 
                     // set map pos
-                    mappos.Text = String.Format("x {0} / y {1}  -  [{2} / {3}]   -   [OX: {4} / OY: {5}]",
-                        x, y, player.X, player.Y, Map.OffsetX, Map.OffsetY
-                    );
+                    App.Instance.Invoke((MethodInvoker)delegate
+                   {
+                       mappos.Text = String.Format("x {0} / y {1}  -  [{2} / {3}]   -   [OX: {4} / OY: {5}]",
+                           x, y, player.X, player.Y, Map.OffsetX, Map.OffsetY
+                       );
+                   });
                 }
                 catch { }
             }
@@ -103,7 +109,7 @@ namespace Mappy
         //
         // Set the map image
         //
-        public void SetMapVisual(dynamic newMap) 
+        public void SetMapVisual(dynamic newMap)
         {
             try
             {
@@ -118,15 +124,19 @@ namespace Mappy
                 Logger.Add($"Loading map: {Map.LocalFilename}");
                 MapBackground = AppHelper.createBitmap((string)Map.LocalFilename);
 
-                // set map status
-                mapstatus.Text = String.Format("#{0} - {1} - {2} - {3} (Layers: {4} - {5})",
-                    Map.ID, Map.PlaceNameRegion.Name, Map.PlaceName.Name, Map.TerritoryType.PlaceNameZone.Name, Map.LayerCount, hightRestricted
-                );
+                App.Instance.Invoke((MethodInvoker)delegate
+               {
+                    // set map status
+                    mapstatus.Text = String.Format("#{0} - {1} - {2} - {3} (Layers: {4} - {5})",
+                       Map.ID, Map.PlaceNameRegion.Name, Map.PlaceName.Name, Map.TerritoryType.PlaceNameZone.Name,
+                       Map.LayerCount, hightRestricted
+                   );
 
-                // set map info
-                mapinfo.Text = String.Format("{0} - Marker Range {1} - Scale {2} - Territory ID {3}",
-                    Map.LocalFilename, Map.MapMarkerRange, Map.SizeFactor, Map.TerritoryType.ID
-                );
+                    // set map info
+                    mapinfo.Text = String.Format("{0} - Marker Range {1} - Scale {2} - Territory ID {3}",
+                       Map.LocalFilename, Map.MapMarkerRange, Map.SizeFactor, Map.TerritoryType.ID
+                   );
+               });
 
                 // update status
                 App.Instance.SetStatus($"Currently mapping: #{Map.ID} - {Map.PlaceName.Name} - {Map.TerritoryType.PlaceNameZone.Name} - {hightRestricted}");
@@ -197,7 +207,7 @@ namespace Mappy
 
             // work out pixel position
             int pixelX = Convert.ToInt32((x - 1) * 50 * (double)Map.SizeFactor) - (MapPlayer.icon.Size.Width / 2);
-            int pixelY = Convert.ToInt32((y - 1) * 50 * (double)Map.SizeFactor) - (MapPlayer.icon.Size.Height / 2); 
+            int pixelY = Convert.ToInt32((y - 1) * 50 * (double)Map.SizeFactor) - (MapPlayer.icon.Size.Height / 2);
 
             // set position and direction
             MapPlayer.x = pixelX;
@@ -323,7 +333,8 @@ namespace Mappy
         {
             try
             {
-                if ((double)Map.SizeFactor == 0) {
+                if ((double)Map.SizeFactor == 0)
+                {
                     return;
                 }
 
@@ -332,7 +343,8 @@ namespace Mappy
                 double y = MapHelper.ConvertCoordinatesIntoMapPosition((double)Map.SizeFactor, (double)Map.OffsetY, entity.Coordinate.Y);
 
                 // if positionscome back nothing, skip
-                if (x == 0 || y == 0) {
+                if (x == 0 || y == 0)
+                {
                     return;
                 }
 
@@ -351,7 +363,8 @@ namespace Mappy
                 double pixelX = Math.Round(((x - 1) * 50 * (double)Map.SizeFactor) - 16, 6);
                 double pixelY = Math.Round(((y - 1) * 50 * (double)Map.SizeFactor) - 16, 6);
 
-                if (pixelX == 0 || pixelY == 0) {
+                if (pixelX == 0 || pixelY == 0)
+                {
                     return;
                 }
 
@@ -398,7 +411,8 @@ namespace Mappy
         {
             mousemovement = true;
 
-            if (MapPlayer.id == 1) {
+            if (MapPlayer.id == 1)
+            {
                 playerpos = MapPlayer.x + MapPlayer.y;
             }
         }
@@ -459,7 +473,8 @@ namespace Mappy
             e.Graphics.CompositingMode = CompositingMode.SourceOver;
             e.Graphics.InterpolationMode = InterpolationMode.Bilinear;
 
-            if ((MapPlayer.x + MapPlayer.y) != playerpos) {
+            if ((MapPlayer.x + MapPlayer.y) != playerpos)
+            {
                 mousemovement = false;
             }
 
@@ -479,8 +494,9 @@ namespace Mappy
             try
             {
                 lock (MapBackground)
-                e.Graphics.DrawImage(MapBackground, offsetX, offsetY, MapBackground.Size.Width, MapBackground.Size.Height);
-            } catch { }
+                    e.Graphics.DrawImage(MapBackground, offsetX, offsetY, MapBackground.Size.Width, MapBackground.Size.Height);
+            }
+            catch { }
 
             // add trails
             if (MapTrail.Count > 0)
@@ -495,7 +511,7 @@ namespace Mappy
 
                         // draw player icon
                         lock (icon.icon)
-                        e.Graphics.DrawImage(icon.icon, new_x, new_y, MapTrailSizeWidth, MapTrailSizeHeight);
+                            e.Graphics.DrawImage(icon.icon, new_x, new_y, MapTrailSizeWidth, MapTrailSizeHeight);
                     }
                 }
                 catch { }
@@ -527,7 +543,7 @@ namespace Mappy
                     }
                     catch { }
                 }
-                
+
                 // print mini map trail, blue dots
                 try
                 {
@@ -539,7 +555,7 @@ namespace Mappy
 
                         // draw player icon
                         lock (icon.icon)
-                        e.Graphics.DrawImage(icon.icon, new_x, new_y, MapTrailMiniSizeWidth, MapTrailMiniSizeHeight);
+                            e.Graphics.DrawImage(icon.icon, new_x, new_y, MapTrailMiniSizeWidth, MapTrailMiniSizeHeight);
                     }
                 }
                 catch { }
@@ -556,14 +572,16 @@ namespace Mappy
 
                     // draw player icon
                     lock (MapPlayer.icon)
-                    e.Graphics.DrawImage(MapPlayer.icon, new_x, new_y, MapPlayerIconSizeWidth, MapPlayerIconSizeHeight);
-                } catch { }
+                        e.Graphics.DrawImage(MapPlayer.icon, new_x, new_y, MapPlayerIconSizeWidth, MapPlayerIconSizeHeight);
+                }
+                catch { }
             }
 
             // if map icons
             if (MapIcons.Count > 0)
             {
-                try {
+                try
+                {
                     foreach (MapIcon icon in MapIcons)
                     {
                         // get new position
@@ -571,16 +589,16 @@ namespace Mappy
                         int new_y = icon.y + offsetY;
 
                         // draw player icon
-                        lock(icon.icon)
-                        e.Graphics.DrawImage(icon.icon, new_x, new_y, icon.icon.Size.Width, icon.icon.Size.Height);
+                        lock (icon.icon)
+                            e.Graphics.DrawImage(icon.icon, new_x, new_y, icon.icon.Size.Width, icon.icon.Size.Height);
 
                         // highlight selected icon
                         if (SelectedMarker == icon.id)
                         {
                             // draw highlight graphic
                             Bitmap highlight = new Bitmap("assets\\highlight.png");
-                            lock(highlight)
-                            e.Graphics.DrawImage(highlight, new_x, new_y, highlight.Size.Width, highlight.Size.Height);
+                            lock (highlight)
+                                e.Graphics.DrawImage(highlight, new_x, new_y, highlight.Size.Width, highlight.Size.Height);
 
                             // add name
                             Font stringFont = new Font("Verdana", 10, FontStyle.Bold);
