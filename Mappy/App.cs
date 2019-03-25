@@ -87,9 +87,6 @@ namespace Mappy
             };
             aTimer.Interval = Properties.Settings.Default.ScanTimerSpeed;
             aTimer.Enabled = true;
-
-            // check key
-            API.CheckApiKey(Properties.Settings.Default.ApiKey);
         }
 
         #region Log View Window
@@ -327,56 +324,29 @@ namespace Mappy
         /// <param name="e"></param>
         private void BtnSubmitToApi_Click(object sender, EventArgs e)
         {
-            Logger.Add("Manually submitting XIVAPI data ...");
-            TrackingEnemies.SubmitData();
-            TrackingNpcs.SubmitData();
-        }
+            if (API.IsEnabled()) {
+                Logger.Add("Manually submitting XIVAPI data ...");
+                TrackingEnemies.SubmitData();
+                TrackingNpcs.SubmitData();
+                return;
+            }
 
-        /// <summary>
-        /// Mark a map as complete
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void BtnMarkComplete_Click(object sender, EventArgs e)
-        {
-            Logger.Add("Manually submitting XIVAPI data ...");
-            TrackingEnemies.SubmitData();
-            TrackingNpcs.SubmitData();
-
-            Logger.Add("Marking the map as complete!");
-            API.MarkMapComplete(GameMemory.GetPlayer().MapID);
-        }
-
-        /// <summary>
-        /// Open the current map on XIVAPI
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void BtnOpenXIVAPI_Click(object sender, EventArgs e)
-        {
-            API.OpenOnXivApi(GameMemory.GetPlayer().MapID);
+            Logger.Add("You have not turned on 'Submit to XIVAPI'. Nothing submitted.");
         }
 
         #endregion
 
         #region Settings
 
-        public void ToggleSubmitting(bool enable)
+        public void HandleKeyVerification(bool enabled, string username)
         {
-            Settings_Submit.Checked = enable;
-            Properties.Settings.Default.Submit = Settings_Submit.Checked;
-            Properties.Settings.Default.Save();
-
-            Logger.Add(enable 
-                ? "XIVAPI key enabled! Data will submit. If you have enabled the API key after memory scan, you will need to restart the app to pickup the existing data." 
-                : "XIVAPI key does not have permission to submit data. Ask @Vekien for permission!"
-            );
+            Settings_Submit.Checked = enabled;
+            Logger.Add(enabled ? $"XIVAPI Enabled, welcome {username}." : $"XIVAPI Permission Denied.");
         }
 
         private void LoadSettings()
         {
             TopMost = Properties.Settings.Default.AlwaysOnTop;
-            Settings_Submit.Checked = Properties.Settings.Default.Submit;
             Settings_AlwaysOnTop.Checked = Properties.Settings.Default.AlwaysOnTop;
             Settings_MapBoundaries.Checked = Properties.Settings.Default.MapBounds;
             Settings_IgnoreNoneEnglish.Checked = Properties.Settings.Default.IgnoreNoneEnglish;
@@ -384,15 +354,15 @@ namespace Mappy
             Settings_ScanTimerSpeed.Text = Properties.Settings.Default.ScanTimerSpeed.ToString();
             Settings_MapPlayerTimerSpeed.Text = Properties.Settings.Default.MapPlayerTimerSpeed.ToString();
             Settings_ApiKey.Text = Properties.Settings.Default.ApiKey.ToString();
+            Settings_ApiUrl.Text = Properties.Settings.Default.ApiUrl.ToString();
         }
 
         private void Settings_Submit_CheckedChanged(object sender, EventArgs e)
         {
-            Properties.Settings.Default.Submit = Settings_Submit.Checked;
-            Properties.Settings.Default.Save();
+            API.ToggleMapSubmissions();
 
             if (Settings_Submit.Checked) {
-                API.CheckApiKey(Properties.Settings.Default.ApiKey);
+                API.CheckApiKey();
             }
         }
 
@@ -436,6 +406,12 @@ namespace Mappy
         private void Settings_ApiKey_TextChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.ApiKey = Settings_ApiKey.Text.Trim();
+            Properties.Settings.Default.Save();
+        }
+
+        private void Settings_ApiUrl_TextChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.ApiUrl = Settings_ApiUrl.Text.Trim();
             Properties.Settings.Default.Save();
         }
     }

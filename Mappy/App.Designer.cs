@@ -59,12 +59,12 @@
             this.labelSubmitStatus = new System.Windows.Forms.Label();
             this.Settings_ApiKey = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.btnSubmitToApi = new System.Windows.Forms.Button();
-            this.btnMarkComplete = new System.Windows.Forms.Button();
-            this.btnOpenXIVAPI = new System.Windows.Forms.Button();
+            this.Settings_ApiUrl = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +78,7 @@
             this.labelStatus.Location = new System.Drawing.Point(-3, 59);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.labelStatus.Size = new System.Drawing.Size(1322, 42);
+            this.labelStatus.Size = new System.Drawing.Size(1537, 42);
             this.labelStatus.TabIndex = 24;
             this.labelStatus.Text = "APP STATUS";
             this.labelStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -107,7 +107,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(59)))), ((int)(((byte)(192)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1322, 60);
+            this.pictureBox1.Size = new System.Drawing.Size(1537, 60);
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
@@ -136,7 +136,7 @@
             this.btnOpenMap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
             this.btnOpenMap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenMap.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnOpenMap.Location = new System.Drawing.Point(1205, 12);
+            this.btnOpenMap.Location = new System.Drawing.Point(1420, 12);
             this.btnOpenMap.Name = "btnOpenMap";
             this.btnOpenMap.Size = new System.Drawing.Size(100, 36);
             this.btnOpenMap.TabIndex = 35;
@@ -159,7 +159,7 @@
             this.logview.Name = "logview";
             this.logview.ReadOnly = true;
             this.logview.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.logview.Size = new System.Drawing.Size(935, 741);
+            this.logview.Size = new System.Drawing.Size(1150, 955);
             this.logview.TabIndex = 36;
             this.logview.Text = "";
             // 
@@ -172,12 +172,12 @@
             // 
             this.Settings_Submit.AutoSize = true;
             this.Settings_Submit.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.Settings_Submit.Location = new System.Drawing.Point(19, 325);
+            this.Settings_Submit.Location = new System.Drawing.Point(22, 442);
             this.Settings_Submit.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Settings_Submit.Name = "Settings_Submit";
-            this.Settings_Submit.Size = new System.Drawing.Size(148, 29);
+            this.Settings_Submit.Size = new System.Drawing.Size(221, 29);
             this.Settings_Submit.TabIndex = 37;
-            this.Settings_Submit.Text = "Submit to API";
+            this.Settings_Submit.Text = "(Toggle) Submit to API";
             this.Settings_Submit.UseVisualStyleBackColor = true;
             this.Settings_Submit.CheckedChanged += new System.EventHandler(this.Settings_Submit_CheckedChanged);
             // 
@@ -187,7 +187,7 @@
             this.Settings_AlwaysOnTop.Checked = true;
             this.Settings_AlwaysOnTop.CheckState = System.Windows.Forms.CheckState.Checked;
             this.Settings_AlwaysOnTop.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.Settings_AlwaysOnTop.Location = new System.Drawing.Point(20, 467);
+            this.Settings_AlwaysOnTop.Location = new System.Drawing.Point(20, 560);
             this.Settings_AlwaysOnTop.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Settings_AlwaysOnTop.Name = "Settings_AlwaysOnTop";
             this.Settings_AlwaysOnTop.Size = new System.Drawing.Size(276, 29);
@@ -202,7 +202,7 @@
             this.Settings_MapBoundaries.Checked = true;
             this.Settings_MapBoundaries.CheckState = System.Windows.Forms.CheckState.Checked;
             this.Settings_MapBoundaries.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.Settings_MapBoundaries.Location = new System.Drawing.Point(20, 494);
+            this.Settings_MapBoundaries.Location = new System.Drawing.Point(20, 587);
             this.Settings_MapBoundaries.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Settings_MapBoundaries.Name = "Settings_MapBoundaries";
             this.Settings_MapBoundaries.Size = new System.Drawing.Size(346, 29);
@@ -215,7 +215,7 @@
             // 
             this.Settings_IgnoreNoneEnglish.AutoSize = true;
             this.Settings_IgnoreNoneEnglish.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.Settings_IgnoreNoneEnglish.Location = new System.Drawing.Point(20, 521);
+            this.Settings_IgnoreNoneEnglish.Location = new System.Drawing.Point(20, 614);
             this.Settings_IgnoreNoneEnglish.Name = "Settings_IgnoreNoneEnglish";
             this.Settings_IgnoreNoneEnglish.Size = new System.Drawing.Size(265, 29);
             this.Settings_IgnoreNoneEnglish.TabIndex = 40;
@@ -234,7 +234,7 @@
             this.btnOpenDebug.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
             this.btnOpenDebug.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenDebug.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnOpenDebug.Location = new System.Drawing.Point(1096, 12);
+            this.btnOpenDebug.Location = new System.Drawing.Point(1311, 12);
             this.btnOpenDebug.Name = "btnOpenDebug";
             this.btnOpenDebug.Size = new System.Drawing.Size(100, 36);
             this.btnOpenDebug.TabIndex = 41;
@@ -246,7 +246,7 @@
             // 
             this.Settings_ExtendLogMessages.AutoSize = true;
             this.Settings_ExtendLogMessages.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.Settings_ExtendLogMessages.Location = new System.Drawing.Point(20, 549);
+            this.Settings_ExtendLogMessages.Location = new System.Drawing.Point(20, 642);
             this.Settings_ExtendLogMessages.Name = "Settings_ExtendLogMessages";
             this.Settings_ExtendLogMessages.Size = new System.Drawing.Size(209, 29);
             this.Settings_ExtendLogMessages.TabIndex = 42;
@@ -257,7 +257,7 @@
             // Settings_ScanTimerSpeed
             // 
             this.Settings_ScanTimerSpeed.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Settings_ScanTimerSpeed.Location = new System.Drawing.Point(20, 616);
+            this.Settings_ScanTimerSpeed.Location = new System.Drawing.Point(20, 709);
             this.Settings_ScanTimerSpeed.Name = "Settings_ScanTimerSpeed";
             this.Settings_ScanTimerSpeed.Size = new System.Drawing.Size(346, 34);
             this.Settings_ScanTimerSpeed.TabIndex = 43;
@@ -269,7 +269,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(16, 591);
+            this.label1.Location = new System.Drawing.Point(16, 684);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(206, 23);
             this.label1.TabIndex = 44;
@@ -279,7 +279,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label2.ForeColor = System.Drawing.Color.DarkGray;
-            this.label2.Location = new System.Drawing.Point(17, 652);
+            this.label2.Location = new System.Drawing.Point(17, 745);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(335, 47);
             this.label2.TabIndex = 45;
@@ -290,7 +290,7 @@
             // 
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(18, 775);
+            this.label3.Location = new System.Drawing.Point(18, 868);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(335, 48);
             this.label3.TabIndex = 48;
@@ -302,7 +302,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Gold;
-            this.label5.Location = new System.Drawing.Point(17, 714);
+            this.label5.Location = new System.Drawing.Point(17, 807);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(192, 23);
             this.label5.TabIndex = 47;
@@ -311,7 +311,7 @@
             // Settings_MapPlayerTimerSpeed
             // 
             this.Settings_MapPlayerTimerSpeed.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Settings_MapPlayerTimerSpeed.Location = new System.Drawing.Point(21, 739);
+            this.Settings_MapPlayerTimerSpeed.Location = new System.Drawing.Point(21, 832);
             this.Settings_MapPlayerTimerSpeed.Name = "Settings_MapPlayerTimerSpeed";
             this.Settings_MapPlayerTimerSpeed.Size = new System.Drawing.Size(346, 34);
             this.Settings_MapPlayerTimerSpeed.TabIndex = 46;
@@ -402,7 +402,7 @@
             // Settings_ApiKey
             // 
             this.Settings_ApiKey.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Settings_ApiKey.Location = new System.Drawing.Point(19, 289);
+            this.Settings_ApiKey.Location = new System.Drawing.Point(19, 333);
             this.Settings_ApiKey.Name = "Settings_ApiKey";
             this.Settings_ApiKey.Size = new System.Drawing.Size(346, 34);
             this.Settings_ApiKey.TabIndex = 58;
@@ -413,29 +413,18 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Gold;
-            this.label10.Location = new System.Drawing.Point(15, 264);
+            this.label10.Location = new System.Drawing.Point(15, 308);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(97, 23);
+            this.label10.Size = new System.Drawing.Size(71, 23);
             this.label10.TabIndex = 59;
-            this.label10.Text = "XIVAPI Key";
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label11.ForeColor = System.Drawing.Color.DarkGray;
-            this.label11.Location = new System.Drawing.Point(15, 349);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(335, 51);
-            this.label11.TabIndex = 60;
-            this.label11.Text = "Enter your apps key, only valid keys can submit data to the API. Ask @Vekien for " +
-    "approval.";
+            this.label10.Text = "API Key";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(12, 423);
+            this.label12.Location = new System.Drawing.Point(11, 516);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(141, 41);
             this.label12.TabIndex = 61;
@@ -444,7 +433,7 @@
             // label13
             // 
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label13.Location = new System.Drawing.Point(0, 403);
+            this.label13.Location = new System.Drawing.Point(0, 496);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(385, 1);
             this.label13.TabIndex = 62;
@@ -460,7 +449,7 @@
             this.btnSubmitToApi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
             this.btnSubmitToApi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmitToApi.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnSubmitToApi.Location = new System.Drawing.Point(912, 12);
+            this.btnSubmitToApi.Location = new System.Drawing.Point(1127, 12);
             this.btnSubmitToApi.Name = "btnSubmitToApi";
             this.btnSubmitToApi.Size = new System.Drawing.Size(176, 36);
             this.btnSubmitToApi.TabIndex = 63;
@@ -468,58 +457,51 @@
             this.btnSubmitToApi.UseVisualStyleBackColor = false;
             this.btnSubmitToApi.Click += new System.EventHandler(this.BtnSubmitToApi_Click);
             // 
-            // btnMarkComplete
+            // Settings_ApiUrl
             // 
-            this.btnMarkComplete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMarkComplete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(22)))), ((int)(((byte)(165)))));
-            this.btnMarkComplete.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnMarkComplete.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
-            this.btnMarkComplete.FlatAppearance.BorderSize = 0;
-            this.btnMarkComplete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
-            this.btnMarkComplete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
-            this.btnMarkComplete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarkComplete.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnMarkComplete.Location = new System.Drawing.Point(728, 12);
-            this.btnMarkComplete.Name = "btnMarkComplete";
-            this.btnMarkComplete.Size = new System.Drawing.Size(176, 36);
-            this.btnMarkComplete.TabIndex = 64;
-            this.btnMarkComplete.Text = "MARK COMPLETE";
-            this.btnMarkComplete.UseVisualStyleBackColor = false;
-            this.btnMarkComplete.Click += new System.EventHandler(this.BtnMarkComplete_Click);
+            this.Settings_ApiUrl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Settings_ApiUrl.Location = new System.Drawing.Point(19, 399);
+            this.Settings_ApiUrl.Name = "Settings_ApiUrl";
+            this.Settings_ApiUrl.Size = new System.Drawing.Size(346, 34);
+            this.Settings_ApiUrl.TabIndex = 64;
+            this.Settings_ApiUrl.TextChanged += new System.EventHandler(this.Settings_ApiUrl_TextChanged);
             // 
-            // btnOpenXIVAPI
+            // label9
             // 
-            this.btnOpenXIVAPI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOpenXIVAPI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(22)))), ((int)(((byte)(165)))));
-            this.btnOpenXIVAPI.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnOpenXIVAPI.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
-            this.btnOpenXIVAPI.FlatAppearance.BorderSize = 0;
-            this.btnOpenXIVAPI.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
-            this.btnOpenXIVAPI.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(11)))), ((int)(((byte)(111)))));
-            this.btnOpenXIVAPI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpenXIVAPI.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnOpenXIVAPI.Location = new System.Drawing.Point(584, 12);
-            this.btnOpenXIVAPI.Name = "btnOpenXIVAPI";
-            this.btnOpenXIVAPI.Size = new System.Drawing.Size(137, 36);
-            this.btnOpenXIVAPI.TabIndex = 65;
-            this.btnOpenXIVAPI.Text = "OPEN XIVAPI";
-            this.btnOpenXIVAPI.UseVisualStyleBackColor = false;
-            this.btnOpenXIVAPI.Click += new System.EventHandler(this.BtnOpenXIVAPI_Click);
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.Gold;
+            this.label9.Location = new System.Drawing.Point(18, 371);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(34, 23);
+            this.label9.TabIndex = 65;
+            this.label9.Text = "Url";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Gray;
+            this.label11.Location = new System.Drawing.Point(14, 268);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(101, 41);
+            this.label11.TabIndex = 66;
+            this.label11.Text = "XIVAPI";
             // 
             // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1316, 841);
-            this.Controls.Add(this.btnOpenXIVAPI);
-            this.Controls.Add(this.btnMarkComplete);
+            this.ClientSize = new System.Drawing.Size(1531, 1055);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.Settings_ApiUrl);
             this.Controls.Add(this.btnSubmitToApi);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.logview);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.Settings_ApiKey);
             this.Controls.Add(this.labelSubmitStatus);
@@ -590,12 +572,12 @@
         public System.Windows.Forms.Label labelSubmitStatus;
         private System.Windows.Forms.TextBox Settings_ApiKey;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnSubmitToApi;
-        private System.Windows.Forms.Button btnMarkComplete;
-        private System.Windows.Forms.Button btnOpenXIVAPI;
+        private System.Windows.Forms.TextBox Settings_ApiUrl;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
     }
 }
 

@@ -2,9 +2,6 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Mappy.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="Submit" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="AlwaysOnTop" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
@@ -31,6 +28,9 @@
     </Setting>
     <Setting Name="ApiKey" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ApiUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://xivapi.com</Value>
     </Setting>
   </Settings>
 </SettingsFile>
