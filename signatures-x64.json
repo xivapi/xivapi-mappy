@@ -48,20 +48,26 @@
   },
   {
     "Key": "MAPINFO",
-    "Value": "E8********CCCCCCCCCC48895C2408574883EC208B05",
-    "ASMSignature": true,
+    "Value": "",
+    "SigScanAddress": {
+      "value": 0
+    },
+    "ASMSignature": false,
+    "Offset": 0,
     "PointerPath": [
-      0,
-      16
+      29058524
     ]
   },
   {
     "Key": "ZONEINFO",
-    "Value": "8B9084000000E8****0000EB**833D******000275**833D******000075**833D******000074**48C705",
-    "ASMSignature": true,
+    "Value": "",
+    "SigScanAddress": {
+      "value": 0
+    },
+    "ASMSignature": false,
+    "Offset": 0,
     "PointerPath": [
-      0,
-      -4
+      29058536
     ]
   },
   {
@@ -115,11 +121,11 @@
     "ASMSignature": false,
     "PointerPath": [
       0,
-      56, 
-      48, 
-      40, 
-      32, 
-      0, 
+      56,
+      48,
+      40,
+      32,
+      0,
       0
     ]
   },
@@ -129,10 +135,10 @@
     "ASMSignature": false,
     "PointerPath": [
       0,
-      56, 
-      24, 
-      48, 
-      32, 
+      56,
+      24,
+      48,
+      32,
       60
     ]
   },
