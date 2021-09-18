@@ -1,3 +1,4 @@
+# DEPRECATED
 # FFXIV Mappy (beta)
 
 Be nice, I'm a PHP developer.
